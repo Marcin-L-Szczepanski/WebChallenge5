@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,OAAO,EAAE,SAAS;EAClB,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECCH,OAAI;EDAjB,SAAS,EEMQ,IAAe;EFLhC,WAAW,EELI,WAAW;EFM1B,KAAK,ECNC,OAAO;EDOb,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,6BAA6B;EACzC,MAAM,EAAE,OAAO;EACf,cAAS;IACP,OAAO,EAAE,SAAS;IAClB,SAAS,EEDa,IAAgB;EFGxC,aAAQ;IACN,gBAAgB,ECVC,OAAU",
+"sources": ["../src/components/_buttons.scss","../src/settings/_colors.scss","../src/settings/_typography.scss"],
+"names": [],
+"file": "main.css"
+}
