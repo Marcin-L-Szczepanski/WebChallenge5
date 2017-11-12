@@ -1,0 +1,18 @@
+.button {
+  padding: 10px 30px;
+  border: none;
+  background-color: $color-button;
+  font-size: $font-size-button;
+  font-family: $font-secondary;
+  color: $white;
+  border-radius: 3px;
+  transition: background-color 200ms linear;
+  cursor: pointer;
+  &--large {
+    padding: 18px 50px;
+    font-size: $font-size-button--large;
+  }
+  &:hover {
+    background-color: $color-button-hover;
+  }
+}
