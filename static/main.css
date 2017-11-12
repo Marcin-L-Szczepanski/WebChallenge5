@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #ea5b58;
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  border-radius: 3px;
+  transition: background-color 200ms linear;
+  cursor: pointer; }
+  .button--large {
+    padding: 18px 50px;
+    font-size: 18px; }
+  .button:hover {
+    background-color: #e87371; }
+
+/*# sourceMappingURL=main.css.map */
