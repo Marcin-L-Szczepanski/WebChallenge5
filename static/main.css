@@ -412,6 +412,35 @@ template {
   .button:hover {
     background-color: #e87371; }
 
+.heading {
+  text-align: center; }
+  .heading__title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .heading__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .heading__underline {
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    height: 2px;
+    background-color: black; }
+    .heading__underline::before, .heading__underline::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      height: 16px;
+      width: 16px;
+      background-color: black;
+      border-radius: 50%; }
+    .heading__underline::before {
+      left: -8px; }
+    .heading__underline::after {
+      right: -8px; }
+
 .card {
   display: -webkit-box;
   display: -moz-box;
@@ -477,6 +506,8 @@ template {
     height: 60px;
     width: 100%;
     max-width: 275px; }
+    .form__input:first-of-type {
+      margin-right: 20px; }
   .form__textarea {
     height: 165px;
     resize: none;

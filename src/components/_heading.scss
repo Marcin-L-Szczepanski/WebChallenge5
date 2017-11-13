@@ -1,0 +1,37 @@
+.heading {
+  text-align: center;
+  &__title {
+    font-family: $font-primary;
+    font-size: $font-size-heading-title;
+    margin-bottom: 10px;
+  }
+  
+  &__subtitle {
+    font-family: $font-secondary;
+    font-size: $font-size-heading-subtitle;
+    margin-bottom: 20px;
+  }
+  
+  &__underline {
+    display: inline-block;
+    position: relative;
+    width: 270px;
+    height: 2px;
+    background-color: black;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      height: 16px;
+      width: 16px;
+      background-color: black;
+      border-radius: 50%;
+    }
+    &::before {
+      left: -8px;
+    }
+    &::after {
+      right: -8px;
+    }
+  }
+}
