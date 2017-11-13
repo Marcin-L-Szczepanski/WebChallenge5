@@ -8,9 +8,11 @@
   
   &__title {
     font-family: $font-primary;
+    font-size: $font-size-card-title;
   }
   &__description {
     font-family: $font-secondary;
+    font-size: $font-size-card-descr;
     text-align: center;
   }
 }
