@@ -1,0 +1,8 @@
+.logo {
+  font-family: $font-primary;
+  font-size: $font-size-logo;
+  
+  &--light {
+    font-family: $font-secondary;
+  }
+}
