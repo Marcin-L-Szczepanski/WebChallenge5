@@ -1,0 +1,6 @@
+.card {
+  @include flexbox;
+  @include flex-direction(column);
+  height: 220px;
+  width: 230px;
+}

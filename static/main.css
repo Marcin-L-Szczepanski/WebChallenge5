@@ -1,5 +1,6 @@
 .button {
   padding: 10px 30px;
+  max-width: 90px;
   border: none;
   background-color: #ea5b58;
   font-size: 11px;
@@ -10,8 +11,22 @@
   cursor: pointer; }
   .button--large {
     padding: 18px 50px;
+    max-width: 145px;
     font-size: 18px; }
   .button:hover {
     background-color: #e87371; }
+
+.card {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 220px;
+  width: 230px; }
 
 /*# sourceMappingURL=main.css.map */
