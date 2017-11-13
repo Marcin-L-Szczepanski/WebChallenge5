@@ -1,0 +1,33 @@
+%input {
+  background-color: $color-form;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: $font-secondary;
+  font-size: $font-size-form;
+}
+
+.form {
+  @include flexbox;
+  @include flex-direction(column);
+  width: 100%;
+  max-width: 570px;
+  &__inline {
+    @include flexbox;
+    @include justify-content(space-between);
+    margin-bottom: 20px;
+  }
+  &__input {
+    @extend %input;
+    height: 60px;
+    width: 100%;
+    max-width: 275px;
+  }
+  &__textarea {
+    @extend %input;
+    height: 165px;
+    resize: none;
+    margin-bottom: 20px;
+    
+  }
+}
