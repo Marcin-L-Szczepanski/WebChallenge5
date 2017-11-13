@@ -4,7 +4,7 @@
   border: none;
   background-color: #ea5b58;
   font-size: 11px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   border-radius: 3px;
   transition: background-color 200ms linear;
@@ -26,7 +26,21 @@
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   height: 220px;
   width: 230px; }
+  .card__title {
+    font-family: "PT Sans", sans-serif; }
+  .card__description {
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

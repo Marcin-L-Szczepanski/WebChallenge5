@@ -1,6 +1,16 @@
 .card {
   @include flexbox;
   @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
   height: 220px;
   width: 230px;
+  
+  &__title {
+    font-family: $font-primary;
+  }
+  &__description {
+    font-family: $font-secondary;
+    text-align: center;
+  }
 }
