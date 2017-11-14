@@ -1,0 +1,31 @@
+.gallery {
+  text-align: center;
+  &__header {
+    font-family: $font-secondary;
+    font-size: $font-size-small;
+    color: $color-text-active;
+    &--inactive {
+      color: $color-text-inactive;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+  &__body {
+    @include flexbox;
+    @include flex-flow(row wrap);
+    max-width: 1170px;
+  }
+  &__project {
+    @include flex(auto);
+    width: 370px;
+    padding: 15px;
+  }
+  &__picture {
+    width: 100%;
+    height: auto;
+  }
+  &__footer {
+    
+  }
+}

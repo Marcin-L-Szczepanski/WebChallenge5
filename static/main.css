@@ -394,23 +394,11 @@ template {
   padding: 0;
   box-sizing: border-box; }
 
-.button {
-  padding: 10px 30px;
-  max-width: 90px;
-  border: none;
-  background-color: #ea5b58;
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  border-radius: 3px;
-  transition: background-color 200ms linear;
-  cursor: pointer; }
-  .button--large {
-    padding: 18px 50px;
-    max-width: 145px;
-    font-size: 18px; }
-  .button:hover {
-    background-color: #e87371; }
+.logo {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px; }
+  .logo--light {
+    font-family: "Open Sans", sans-serif; }
 
 .heading {
   text-align: center; }
@@ -470,6 +458,39 @@ template {
     font-size: 14px;
     text-align: center; }
 
+.gallery {
+  text-align: center; }
+  .gallery__header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #323232; }
+    .gallery__header--inactive {
+      color: #a7a7a7; }
+    .gallery__header span {
+      cursor: pointer; }
+  .gallery__body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    max-width: 1170px; }
+  .gallery__project {
+    -webkit-box-flex: auto;
+    -moz-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 370px;
+    padding: 15px; }
+  .gallery__picture {
+    width: 100%;
+    height: auto; }
+
 .form__input, .form__textarea {
   background-color: #eeeeee;
   border: none;
@@ -512,5 +533,23 @@ template {
     height: 165px;
     resize: none;
     margin-bottom: 20px; }
+
+.button {
+  padding: 10px 30px;
+  max-width: 90px;
+  border: none;
+  background-color: #ea5b58;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: background-color 200ms linear;
+  cursor: pointer; }
+  .button--large {
+    padding: 18px 50px;
+    max-width: 145px;
+    font-size: 18px; }
+  .button:hover {
+    background-color: #e87371; }
 
 /*# sourceMappingURL=main.css.map */
