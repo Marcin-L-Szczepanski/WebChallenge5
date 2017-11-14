@@ -7,11 +7,10 @@
   width: 230px;
   
   &__title {
-    font-family: $font-primary;
     font-size: $font-size-card-title;
+    font-weight: $bold;
   }
   &__description {
-    font-family: $font-secondary;
     font-size: $font-size-card-descr;
     text-align: center;
   }

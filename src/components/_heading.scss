@@ -1,13 +1,12 @@
 .heading {
   text-align: center;
   &__title {
-    font-family: $font-primary;
     font-size: $font-size-heading-title;
+    font-weight: $bold;
     margin-bottom: 10px;
   }
   
   &__subtitle {
-    font-family: $font-secondary;
     font-size: $font-size-heading-subtitle;
     margin-bottom: 20px;
   }
