@@ -1,11 +1,3 @@
-%input {
-  background-color: $color-form;
-  border: none;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: $font-size-form;
-}
-
 .form {
   @include flexbox;
   @include flex-direction(column);
@@ -16,8 +8,24 @@
     @include justify-content(space-between);
     margin-bottom: 20px;
   }
+  &__input, &__textarea {
+    background-color: $color-form;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: $font-size-form;
+    border: 1px solid transparent;
+    &:focus {
+      background-color: $white;
+    }
+    &:valid {
+      border-color: green;
+    }
+    &:invalid {
+      border-color: red;
+    }
+  }
   &__input {
-    @extend %input;
     height: 60px;
     width: 100%;
     max-width: 275px;
@@ -26,7 +34,6 @@
     }
   }
   &__textarea {
-    @extend %input;
     height: 165px;
     resize: none;
     margin-bottom: 20px;
