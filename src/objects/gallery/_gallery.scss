@@ -1,0 +1,21 @@
+.gallery {
+  text-align: center;
+  &__category {
+    font-size: $font-size-small;
+    color: $color-text-active;
+    &--inactive {
+      color: $color-text-inactive;
+      cursor: pointer;
+    }
+  }
+  &__body {
+    @include flexbox;
+    @include flex-flow(row wrap);
+    max-width: 1200px;
+  }
+  &__footer {
+    font-size: $font-size-small;
+    color: $color-text-active;
+    font-weight: $bold;
+  }
+}

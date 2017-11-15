@@ -1,1 +1,15 @@
 @import "flexbox";
+
+// generic transform
+@mixin transform($type) {
+  -webkit-transform: $type;
+  	  -ms-transform: $type;
+     -moz-transform: $type;
+	   -o-transform: $type;
+  	      transform: $type;
+}
+
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+} 

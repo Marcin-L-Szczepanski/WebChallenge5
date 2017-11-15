@@ -1,0 +1,59 @@
+.postcard {
+  position: relative;
+    @include flex(auto);
+    width: 370px;
+    margin: 15px;
+    overflow: hidden;
+  &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-postcard;
+      opacity: 0;
+      transition: all 300ms linear;
+    }
+  &:hover {
+    &::after {
+      opacity: 0.8;
+    }
+    .postcard__picture {
+      @include scale(1.2);
+    }
+    .postcard__text {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+  &__picture {
+    height: 100%;
+    width: 100%;
+    transition: all 300ms linear;
+  }
+  &__text {
+    opacity: 0;
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: $white;
+    transition: all 300ms linear;
+  }
+  &__title {
+    font-weight: $bold;
+    font-size: $font-size-postcard-title;
+    margin-bottom: 25px;
+  }
+  &__description {
+    margin-bottom: 25px;
+    width: 80%;
+    font-size: $font-size-postcard-descr;
+  }
+}

@@ -392,22 +392,46 @@ template {
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.gallery {
+  text-align: center; }
+  .gallery__category {
+    font-size: 18px;
+    color: #323232; }
+    .gallery__category--inactive {
+      color: #a7a7a7;
+      cursor: pointer; }
+  .gallery__body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    max-width: 1200px; }
+  .gallery__footer {
+    font-size: 18px;
+    color: #323232;
+    font-weight: 700; }
 
 .logo {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px; }
-  .logo--light {
-    font-family: "Open Sans", sans-serif; }
+  .logo--bold {
+    font-weight: 700; }
 
 .heading {
   text-align: center; }
   .heading__title {
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
+    font-weight: 700;
     margin-bottom: 10px; }
   .heading__subtitle {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     margin-bottom: 20px; }
   .heading__underline {
@@ -451,53 +475,82 @@ template {
   height: 220px;
   width: 230px; }
   .card__title {
-    font-family: "PT Sans", sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: 700; }
   .card__description {
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     text-align: center; }
 
-.gallery {
-  text-align: center; }
-  .gallery__header {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #323232; }
-    .gallery__header--inactive {
-      color: #a7a7a7; }
-    .gallery__header span {
-      cursor: pointer; }
-  .gallery__body {
+.postcard {
+  position: relative;
+  -webkit-box-flex: auto;
+  -moz-box-flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 370px;
+  margin: 15px;
+  overflow: hidden; }
+  .postcard::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #506083;
+    opacity: 0;
+    transition: all 300ms linear; }
+  .postcard:hover::after {
+    opacity: 0.8; }
+  .postcard:hover .postcard__picture {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  .postcard:hover .postcard__text {
+    opacity: 1;
+    z-index: 1; }
+  .postcard__picture {
+    height: 100%;
+    width: 100%;
+    transition: all 300ms linear; }
+  .postcard__text {
+    opacity: 0;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    max-width: 1170px; }
-  .gallery__project {
-    -webkit-box-flex: auto;
-    -moz-box-flex: auto;
-    -webkit-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 370px;
-    padding: 15px; }
-  .gallery__picture {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    height: auto; }
-
-.form__input, .form__textarea {
-  background-color: #eeeeee;
-  border: none;
-  border-radius: 5px;
-  padding: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px; }
+    color: #ffffff;
+    transition: all 300ms linear; }
+  .postcard__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .postcard__description {
+    margin-bottom: 25px;
+    width: 80%;
+    font-size: 14px; }
 
 .form {
   display: -webkit-box;
@@ -523,6 +576,19 @@ template {
     justify-content: space-between;
     -ms-flex-pack: space-between;
     margin-bottom: 20px; }
+  .form__input, .form__textarea {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid transparent; }
+    .form__input:focus, .form__textarea:focus {
+      background-color: #ffffff; }
+    .form__input:valid, .form__textarea:valid {
+      border-color: green; }
+    .form__input:invalid, .form__textarea:invalid {
+      border-color: red; }
   .form__input {
     height: 60px;
     width: 100%;
@@ -540,7 +606,6 @@ template {
   border: none;
   background-color: #ea5b58;
   font-size: 11px;
-  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   border-radius: 3px;
   transition: background-color 200ms linear;
