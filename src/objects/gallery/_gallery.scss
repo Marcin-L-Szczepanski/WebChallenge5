@@ -9,8 +9,8 @@
     }
   }
   &__body {
-    @include flexbox;
-    @include flex-flow(row wrap);
+ //   @include flexbox;
+//    @include flex-flow(row wrap);
     max-width: 1200px;
   }
   &__footer {
