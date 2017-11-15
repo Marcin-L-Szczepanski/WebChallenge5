@@ -15,13 +15,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="static/main.css">
   </head>
 
   <body>
     <header>
-      <h1 class="logo">Macan<span class="logo--light">kumbang</span></h1>
+      <h1 class="logo"><span class="logo--bold">Macan</span>kumbang</h1>
       <nav>
         <ul>
           <li>Home</li>
@@ -84,26 +84,56 @@
             <p><span id="gallery__all">All</span> / <span id="gallery__web" class="gallery__header--inactive">Web</span> / <span id="gallery__print" class="gallery__header--inactive">Print</span></p>
           </div>
           <div class="gallery__body">
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture web" src="img/projects/project1.jpeg" alt=""></a>
-            </div>
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture print"  src="img/projects/project2.jpeg" alt=""></a>
-            </div>
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture web"  src="img/projects/project3.jpeg" alt=""></a>
-            </div>
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture web"  src="img/projects/project4.jpeg" alt=""></a>
-            </div>
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture print"  src="img/projects/project5.jpeg" alt=""></a>
-            </div>
-            <div class="gallery__project">
-              <a href="#"><img class="gallery__picture web"  src="img/projects/project6.jpeg" alt=""></a>
-            </div>
+              <figure class="postcard">
+                <img class="postcard__picture print" src="img/projects/project1.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">High Quality Images</h3>
+                  <p class="postcard__description">Beautiful high quality free images and photos you can download and use for any project.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg">
+                </figcaption>
+              </figure>
+            <figure class="postcard">
+                <img class="postcard__picture web" src="img/projects/project2.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">Cyber Servizi</h3>
+                  <p class="postcard__description">Full responsive modern website for the leader of cyber security industry.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg" alt="">
+                </figcaption>
+              </figure>
+            <figure class="postcard">
+                <img class="postcard__picture web" src="img/projects/project3.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">High Quality Images</h3>
+                  <p class="postcard__description">Beautiful high quality free images and photos you can download and use for any project. No attribution required.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg" alt="">
+                </figcaption>
+              </figure>
+            <figure class="postcard">
+                <img class="postcard__picture web" src="img/projects/project4.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">High Quality Images</h3>
+                  <p class="postcard__description">Beautiful high quality free images and photos you can download and use for any project. No attribution required.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg" alt="">
+                </figcaption>
+              </figure>
+            <figure class="postcard">
+                <img class="postcard__picture print" src="img/projects/project5.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">High Quality Images</h3>
+                  <p class="postcard__description">Beautiful high quality free images and photos you can download and use for any project. No attribution required.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg" alt="">
+                </figcaption>
+              </figure>
+            <figure class="postcard">
+                <img class="postcard__picture web" src="img/projects/project6.jpeg" alt="">
+                <figcaption class="postcard__text">
+                  <h3 class="postcard__title">High Quality Images</h3>
+                  <p class="postcard__description">Beautiful high quality free images and photos you can download and use for any project. No attribution required.</p>
+                  <img class="postcard__icon" src="img/gallery/eye.svg" alt="">
+                </figcaption>
+              </figure>
           </div>
-          <div>
+          <div class="gallery__footer">
             <p>Browse All</p>
             <p>300+</p>
           </div>
@@ -151,10 +181,10 @@
         <div>
           <form class="form">
             <div class="form__inline">
-              <input class="form__input" type="text" placeholder="Name">
-              <input class="form__input" type="email" placeholder="Email (will not published)">
+              <input class="form__input" type="text" placeholder="Name" required>
+              <input class="form__input" type="email" placeholder="Email (will not published)" required>
             </div>
-            <textarea class="form__textarea" placeholder="Message"></textarea>
+            <textarea class="form__textarea" placeholder="Message" required></textarea>
             <button class="form__button button button--large">Send</button>
           </form>
         </div>
