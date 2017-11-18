@@ -8,8 +8,9 @@
 @import "generic/normalize";
 @import "generic/base";
 
+@import "objects/section/section";
+@import "objects/wrapper/wrapper";
 @import "objects/gallery/gallery";
-@import "objects/container/container";
 
 @import "components/logo";
 @import "components/heading";

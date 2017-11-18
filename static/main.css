@@ -392,9 +392,37 @@ template {
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
   font-family: "Open Sans", sans-serif;
+  color: #ffffff;
   font-weight: 400; }
+
+.section--navbar {
+  background-color: #0d0b11; }
+.section--dark {
+  background-color: #161828; }
+.section--light {
+  background-color: #475a85; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
 
 .gallery {
   text-align: center; }
@@ -410,12 +438,6 @@ template {
     font-size: 18px;
     color: #323232;
     font-weight: 700; }
-
-.container {
-  width: 100%;
-  max-width: 1170px;
-  text-align: center;
-  margin: 0 auto; }
 
 .logo {
   font-size: 24px; }
