@@ -575,15 +575,15 @@ a {
     background-color: #506083;
     opacity: 0;
     transition: all 300ms linear; }
-  .postcard:hover::after {
+  .postcard:hover::after, .postcard:focus::after {
     opacity: 0.8; }
-  .postcard:hover .postcard__picture {
+  .postcard:hover .postcard__picture, .postcard:focus .postcard__picture {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2); }
-  .postcard:hover .postcard__text {
+  .postcard:hover .postcard__text, .postcard:focus .postcard__text {
     opacity: 1;
     z-index: 1; }
   .postcard__picture {
