@@ -411,6 +411,12 @@ template {
     color: #323232;
     font-weight: 700; }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto; }
+
 .logo {
   font-size: 24px; }
   .logo--bold {
