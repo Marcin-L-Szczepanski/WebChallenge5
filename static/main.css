@@ -482,7 +482,8 @@ body {
   height: 510px; }
 
 .logo {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 400; }
   .logo--bold {
     font-weight: 700; }
 
