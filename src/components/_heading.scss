@@ -16,14 +16,14 @@
     position: relative;
     width: 270px;
     height: 2px;
-    background-color: black;
+    background-color: $white;
     &::before, &::after {
       content: "";
       position: absolute;
       top: -8px;
       height: 16px;
       width: 16px;
-      background-color: black;
+      background-color: $white;
       border-radius: 50%;
     }
     &::before {

@@ -410,6 +410,7 @@ body {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 90px 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -458,14 +459,14 @@ body {
     position: relative;
     width: 270px;
     height: 2px;
-    background-color: black; }
+    background-color: #ffffff; }
     .heading__underline::before, .heading__underline::after {
       content: "";
       position: absolute;
       top: -8px;
       height: 16px;
       width: 16px;
-      background-color: black;
+      background-color: #ffffff;
       border-radius: 50%; }
     .heading__underline::before {
       left: -8px; }
