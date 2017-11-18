@@ -2,12 +2,17 @@
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 90px 0;
+  padding: 90px 15px;
   @include flexbox;
   @include flex-direction(column);
   @include align-items(center);
   
+  &--low {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   &--high {
-    padding: 150px 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
