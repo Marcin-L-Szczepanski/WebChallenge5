@@ -16,6 +16,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  &--contact {
+    background: url("../img/projects/phone.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   &::before {
     content: "";
     position: absolute;

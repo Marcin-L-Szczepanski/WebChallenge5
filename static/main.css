@@ -427,7 +427,7 @@ body {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
-  .wrapper--padding_large {
+  .wrapper--high {
     padding: 150px 0; }
 
 .banner {
@@ -445,6 +445,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; }
+  .banner--contact {
+    background: url("../img/projects/phone.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .banner::before {
     content: "";
     position: absolute;
@@ -454,7 +460,7 @@ body {
     left: 0;
     background: url("../img/bg.png");
     background-repeat: repeat;
-    opacity: 0.5; }
+    opacity: 0.7; }
 
 .gallery {
   text-align: center; }
@@ -539,8 +545,9 @@ body {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 370px;
-  margin: 15px;
+  width: 100%;
+  max-width: 370px;
+  margin: 15px 0;
   overflow: hidden; }
   .postcard::after {
     position: absolute;

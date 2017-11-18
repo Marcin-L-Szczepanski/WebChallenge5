@@ -1,8 +1,9 @@
 .postcard {
   position: relative;
     @include flex(auto);
-    width: 370px;
-    margin: 15px;
+    width: 100%;
+    max-width: 370px;
+    margin: 15px 0;
     overflow: hidden;
   &::after {
       position: absolute;
