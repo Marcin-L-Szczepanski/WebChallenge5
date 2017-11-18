@@ -405,6 +405,9 @@ body {
   background-color: #161828; }
 .section--light {
   background-color: #475a85; }
+.section--white {
+  background-color: #ffffff;
+  color: #323232; }
 
 .wrapper {
   width: 100%;

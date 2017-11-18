@@ -2,7 +2,7 @@
   text-align: center;
   &__category {
     font-size: $font-size-small;
-    color: $color-text-active;
+    color: $color-text-dark;
     &--inactive {
       color: $color-text-inactive;
       cursor: pointer;
@@ -15,7 +15,7 @@
   }
   &__footer {
     font-size: $font-size-small;
-    color: $color-text-active;
+    color: $color-text-dark;
     font-weight: $bold;
   }
 }
