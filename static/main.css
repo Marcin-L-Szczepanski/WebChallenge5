@@ -397,7 +397,8 @@ template {
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #0d0b11; }
 
 ul {
   list-style: none; }
