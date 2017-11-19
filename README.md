@@ -18,7 +18,7 @@ Syntax: append($list1, $val, [$separator])
 Parameters:
 - $list - list to which a new value will be appended
 - $val - value that will be appended to the list
-- $separator - the list separator to use. If this is 'comma' or 'space', that separator will be used. Unless the '$separator' argument is passed, if the list had only one item, the resulting list will be space-separated.
+- $separator - the list separator to use. If this is `comma` or `space`, that separator will be used. Unless the `$separator` argument is passed, if the list had only one item, the resulting list will be space-separated.
 
 Example:
 ```CSS
