@@ -1,0 +1,19 @@
+.intro {
+  &__title {
+    font-size: $font-size-intro-title;
+    font-weight: $bold;
+  }
+  &__subtitle {
+    font-size: $font-size-intro-subtitle;
+  }
+  &__pic {
+    width: 100%;
+    max-width: 470px;
+    $all: ();
+    @for $i from 1 through 21 {
+       $all: append($all, -#{$i}px #{$i}px 0 #64656e, comma);
+    }
+    box-shadow: $all;
+    border-radius: 5px;
+  }
+}
