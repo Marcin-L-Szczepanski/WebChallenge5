@@ -1,0 +1,23 @@
+.details {
+  width: 100%;
+  max-width: 470px;
+  font-size: $font-size-contact;
+  &__opening-hours {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-weight: $bold;
+    margin-bottom: 20px;
+  }
+  &__detail {
+    @include flexbox;
+    margin-bottom: 28px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    fill: $color-social-inactive;
+  }
+}

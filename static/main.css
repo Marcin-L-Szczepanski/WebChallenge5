@@ -638,6 +638,29 @@ a {
     width: 80%;
     font-size: 14px; }
 
+.details {
+  width: 100%;
+  max-width: 470px;
+  font-size: 18px; }
+  .details__opening-hours {
+    margin-bottom: 30px; }
+  .details__title {
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .details__detail {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 28px; }
+  .details__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    fill: #c0c0c0; }
+
 .form {
   display: -webkit-box;
   display: -moz-box;
@@ -734,8 +757,8 @@ a {
     .socials__icon:hover {
       background-color: #fcf3ff; }
   .socials__logo {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     fill: #475a85; }
 
 /*# sourceMappingURL=main.css.map */
