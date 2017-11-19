@@ -675,6 +675,8 @@ a {
     display: inline-block;
     margin-right: 10px;
     fill: #c0c0c0; }
+  .details__socials {
+    margin-top: 50px; }
 
 .form {
   display: -webkit-box;
