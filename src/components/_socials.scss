@@ -1,0 +1,23 @@
+.socials {
+  width: 170px;
+  @include flexbox;
+  &__icon {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+    width: 35px;
+    height: 35px;
+    background-color: $color-social-inactive;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:hover {
+      background-color: $color-social-active;
+    }
+  }
+  &__logo {
+    width: 50%;
+    height: 50%;
+    fill: $color-bg-light;
+  }
+}

@@ -703,4 +703,39 @@ a {
   .button:hover {
     background-color: #e87371; }
 
+.socials {
+  width: 170px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .socials__icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #c0c0c0;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .socials__icon:hover {
+      background-color: #fcf3ff; }
+  .socials__logo {
+    width: 50%;
+    height: 50%;
+    fill: #475a85; }
+
 /*# sourceMappingURL=main.css.map */
