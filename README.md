@@ -30,7 +30,7 @@ append((blue, red), green, space)  => blue red green   // $list = blue, red  |  
 Use in the project:
 Problem: 
 Creating the below box-shadow effect, required using overlaying box-shadows.
-![Box-shadow](https://github.com/Marcin-L-Szczepanski/WebChallenge5/blob/master/resources/shadow.jpg)
+![Box-shadow](https://github.com/Marcin-L-Szczepanski/WebChallenge5/blob/master/resources/shadow.png)
 Since the width of box-shadow is 21px, it would require 21 repetition of the below code:
 ```CSS
 box-shadow: -1px 1px 0px #64656e;
