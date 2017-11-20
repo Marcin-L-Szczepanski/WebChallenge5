@@ -4,13 +4,13 @@
 
 
 // Tiny screen (@screen-tiny)
-@media only screen and (min-width: 376px) {
-
+@media only screen and (min-width: 370px) {
+  @include intro\@screen-tiny;
 }
 
 // Small screen (@screen-small)
 @media only screen and (min-width: 650px) {
-  @include intro\@screen_small;
+  @include intro\@screen-small;
 }
 
 // Portrait orientation

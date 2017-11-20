@@ -421,7 +421,7 @@ a {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 90px 15px;
+  padding: 60px 15px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -463,6 +463,7 @@ a {
   align-items: center; }
 
 .banner {
+  text-align: center;
   position: relative; }
   .banner__title {
     font-size: 48px;
@@ -831,9 +832,15 @@ a {
     height: 60%;
     fill: #475a85; }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 370px) {
   .intro__title {
     font-size: 36px;
+    margin-bottom: 30px; }
+  .intro__subtitle {
+    font-size: 21px;
+    margin-bottom: 50px; } }
+@media only screen and (min-width: 650px) {
+  .intro__title {
     margin-bottom: 40px; }
   .intro__subtitle {
     font-size: 24px;

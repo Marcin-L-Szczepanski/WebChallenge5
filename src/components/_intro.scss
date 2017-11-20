@@ -16,7 +16,7 @@
     order: -1;
     $all: ();
     @for $i from 1 through 21 {
-       $all: append($all, -#{$i}px #{$i}px 0 #64656e, comma);
+      $all: append($all, -#{$i}px #{$i}px 0 #64656e, comma);
     }
     box-shadow: $all;
     border-radius: 5px;
@@ -25,11 +25,24 @@
 
 
 // Media queries 
-  // Small screen  >  650px (@screen-small)
-  @mixin intro\@screen_small {
+  // Tiny screen  >  380px (@screen-tiny)
+  @mixin intro\@screen-tiny {
     .intro {
       &__title {
          font-size: $font-size-intro-title;
+         margin-bottom: 30px;
+      }
+      &__subtitle {
+          font-size: $font-size-intro-subtitle - 3px;
+          margin-bottom: 50px;
+      }
+    }
+  }
+
+  // Small screen  >  650px (@screen-small)
+  @mixin intro\@screen-small {
+    .intro {
+      &__title {
          margin-bottom: 40px;
       }
       &__subtitle {
