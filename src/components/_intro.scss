@@ -1,5 +1,9 @@
 .intro {
-  text-align: center;
+    text-align: center;
+  &__text {
+    width: 100%;
+    max-width: 570px;
+  }
   &__title {
     font-size: $font-size-intro-title - 8px;
     font-weight: $bold;
@@ -9,11 +13,13 @@
     font-size: $font-size-intro-subtitle - 6px;
     margin-bottom: 40px;
   }
+  &__graphic {
+     order: -1;
+  }
   &__pic {
-    width: 85%;
     max-width: 470px;
+    width: 85%;
     margin-bottom: 60px;
-    order: -1;
     $all: ();
     @for $i from 1 through 21 {
       $all: append($all, -#{$i}px #{$i}px 0 #64656e, comma);
@@ -49,10 +55,15 @@
           font-size: $font-size-intro-subtitle;
           margin-bottom: 60px;
       }
-      &__pic {
+      &__graphic {
         width: 100%;
-        order: 0;
+         order: 0;
+      }
+      &__pic {
         margin-bottom: 0;
       }
     }
   }
+
+ 
+
