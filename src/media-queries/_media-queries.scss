@@ -1,0 +1,39 @@
+// Media Queries //
+// Inspired by https://medium.com/front-end-developers/the-solution-to-media-queries-in-sass-5493ebe16844
+// and: https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
+
+
+// Tiny screen (@screen-tiny)
+@media only screen and (min-width: 376px) {
+
+}
+
+// Small screen (@screen-small)
+@media only screen and (min-width: 650px) {
+  @include intro\@screen_small;
+}
+
+// Portrait orientation
+@media only screen and (min-width: 640px), (orientation: portrait) {
+
+}
+
+// Medium screen (@screen-medium)
+@media only screen and (min-width: 750px) {
+
+}
+
+// Large screen (@screen-large)
+@media only screen and (min-width: 850px) {
+
+}
+
+// Wide screen (@screen-wide)
+@media only screen and (min-width: 1024px) {
+
+}
+
+// Mega screen (@screen-mega)
+@media only screen and (min-width: 1200px) {
+
+}
