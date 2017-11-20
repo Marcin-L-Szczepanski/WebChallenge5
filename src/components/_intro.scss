@@ -29,7 +29,7 @@
   @mixin intro\@screen_small {
     .intro {
       &__title {
-         $font-size-intro-title;
+         font-size: $font-size-intro-title;
          margin-bottom: 40px;
       }
       &__subtitle {
