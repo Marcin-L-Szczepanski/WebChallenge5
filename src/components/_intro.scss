@@ -1,14 +1,19 @@
 .intro {
+  text-align: center;
   &__title {
-    font-size: $font-size-intro-title;
+    font-size: $font-size-intro-title - 8px;
     font-weight: $bold;
+    margin-bottom: 20px;
   }
   &__subtitle {
-    font-size: $font-size-intro-subtitle;
+    font-size: $font-size-intro-subtitle - 6px;
+    margin-bottom: 40px;
   }
   &__pic {
-    width: 100%;
+    width: 85%;
     max-width: 470px;
+    margin-bottom: 60px;
+    order: -1;
     $all: ();
     @for $i from 1 through 21 {
        $all: append($all, -#{$i}px #{$i}px 0 #64656e, comma);
@@ -17,3 +22,24 @@
     border-radius: 5px;
   }
 }
+
+
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin intro\@screen_small {
+    .intro {
+      &__title {
+         $font-size-intro-title;
+         margin-bottom: 40px;
+      }
+      &__subtitle {
+          font-size: $font-size-intro-subtitle;
+          margin-bottom: 60px;
+      }
+      &__pic {
+        width: 100%;
+        order: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
