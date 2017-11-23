@@ -11,10 +11,10 @@
     z-index: 1;
   }
   &--work {
-    @include banner("idea.jpg");
+    @include banner("idea.jpeg");
   }
   &--contact {
-    @include banner("phone.jpg");
+    @include banner("phone.jpeg");
   }
   &::before {
     content: "";
