@@ -21,5 +21,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  // Set fixed background for desktop width
+  @media only screen and (min-width: 1367px) {
+    background-attachment: fixed;
+  }
 }

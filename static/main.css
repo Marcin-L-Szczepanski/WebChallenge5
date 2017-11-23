@@ -478,13 +478,19 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; }
+    background-attachment: scroll; }
+    @media only screen and (min-width: 1367px) {
+      .banner--work {
+        background-attachment: fixed; } }
   .banner--contact {
     background: url("../img/projects/phone.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; }
+    background-attachment: scroll; }
+    @media only screen and (min-width: 1367px) {
+      .banner--contact {
+        background-attachment: fixed; } }
   .banner::before {
     content: "";
     position: absolute;
