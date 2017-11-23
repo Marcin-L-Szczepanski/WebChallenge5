@@ -13,3 +13,13 @@
 @mixin scale($scale) {
 	 @include transform(scale($scale));
 } 
+
+
+// Banner
+@mixin banner($pic) {
+  background: url("../img/projects/#{$pic}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

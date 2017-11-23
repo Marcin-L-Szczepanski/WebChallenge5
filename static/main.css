@@ -474,13 +474,13 @@ a {
     font-size: 24px;
     z-index: 1; }
   .banner--work {
-    background: url("../img/projects/idea.jpeg");
+    background: url("../img/projects/idea.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; }
   .banner--contact {
-    background: url("../img/projects/phone.jpeg");
+    background: url("../img/projects/phone.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
