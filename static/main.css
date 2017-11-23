@@ -491,7 +491,7 @@ a {
     @media only screen and (min-width: 1367px) {
       .banner--contact {
         background-attachment: fixed; } }
-  .banner::before {
+  .banner::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -660,12 +660,12 @@ a {
   margin: 15px 0;
   overflow: hidden; }
   .postcard::after {
-    position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: #506083;
     opacity: 0;
     transition: all 300ms linear; }
