@@ -12,7 +12,18 @@
     padding-bottom: 30px;
   }
   &--high {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
+
+// Media queries 
+  // Medium screen  >  750px (@screen-medium)
+  @mixin wrapper\@screen-medium {
+    .wrapper {
+      &--high {
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+    }
+  }
