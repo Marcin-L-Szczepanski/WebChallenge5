@@ -590,6 +590,8 @@ a {
       left: -8px; }
     .heading__underline::after {
       right: -8px; }
+    .heading__underline--black, .heading__underline--black::before, .heading__underline--black::after {
+      background-color: #000000; }
 
 .card {
   display: -webkit-box;
