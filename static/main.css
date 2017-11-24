@@ -460,8 +460,7 @@ a {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center;
-  margin-top: 40px; }
+  align-items: center; }
 
 .banner {
   text-align: center;
@@ -564,7 +563,8 @@ a {
     border-radius: 5px; }
 
 .heading {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
   .heading__title {
     font-size: 30px;
     font-weight: 700;
