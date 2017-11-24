@@ -17,5 +17,9 @@
     font-size: $font-size-small;
     color: $color-text-dark;
     font-weight: $bold;
+    height: 90px;
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(space-between);
   }
 }

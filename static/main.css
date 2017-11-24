@@ -514,7 +514,22 @@ a {
   .gallery__footer {
     font-size: 18px;
     color: #323232;
-    font-weight: 700; }
+    font-weight: 700;
+    height: 90px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
 
 .map {
   width: 100%;
