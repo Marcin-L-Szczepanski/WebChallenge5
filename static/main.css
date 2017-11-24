@@ -529,8 +529,32 @@ a {
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    -ms-flex-pack: space-between; }
+    -ms-flex-pack: space-between;
+    margin-top: 65px; }
+  .gallery__arrow {
+    animation: arrow 1.2s cubic-bezier(0.05, 0.87, 0.5, 0.07) infinite; }
+    .gallery__arrow:hover {
+      animation-play-state: initial; }
 
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  70% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0; } }
 .map {
   width: 100%;
   height: 510px; }

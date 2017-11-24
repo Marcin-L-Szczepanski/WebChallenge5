@@ -21,5 +21,30 @@
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(space-between);
+    margin-top: 65px;
+  }
+  &__arrow {
+    animation: arrow 1.2s cubic-bezier(0.05, 0.87, 0.5, 0.07) infinite;
+    &:hover {
+      animation-play-state: initial;
+    }
+  }
+}
+
+
+@keyframes arrow {
+  0% {
+    @include transform(translateY(-10px));
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    @include transform(translateY(30px));
+    opacity: 0;
   }
 }

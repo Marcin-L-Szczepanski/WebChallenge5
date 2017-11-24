@@ -12,6 +12,10 @@
 @mixin scale($scale) {
 	 @include transform(scale($scale));
 } 
+// scale
+@mixin translate($translate) {
+	 @include transform(translate($translate));
+} 
 
 // After pseudo-element
 @mixin after {
