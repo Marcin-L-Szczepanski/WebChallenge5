@@ -26,6 +26,11 @@
     }
     box-shadow: $all;
     border-radius: 5px;
+    transition: filter 1000ms linear;
+    &--loading {
+       filter: blur(10px);
+      
+    }
   }
 }
 

@@ -599,7 +599,10 @@ a {
     width: 85%;
     margin-bottom: 60px;
     box-shadow: -1px 1px 0 #64656e, -2px 2px 0 #64656e, -3px 3px 0 #64656e, -4px 4px 0 #64656e, -5px 5px 0 #64656e, -6px 6px 0 #64656e, -7px 7px 0 #64656e, -8px 8px 0 #64656e, -9px 9px 0 #64656e, -10px 10px 0 #64656e, -11px 11px 0 #64656e, -12px 12px 0 #64656e, -13px 13px 0 #64656e, -14px 14px 0 #64656e, -15px 15px 0 #64656e, -16px 16px 0 #64656e, -17px 17px 0 #64656e, -18px 18px 0 #64656e, -19px 19px 0 #64656e, -20px 20px 0 #64656e, -21px 21px 0 #64656e;
-    border-radius: 5px; }
+    border-radius: 5px;
+    transition: filter 1000ms linear; }
+    .intro__pic--loading {
+      filter: blur(10px); }
 
 .heading {
   text-align: center;
