@@ -764,6 +764,45 @@ a {
     width: 80%;
     font-size: 14px; }
 
+.opinion {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  .opinion__portrait {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    border: 6px solid #ebebeb; }
+  .opinion__picture {
+    width: auto;
+    height: 100%;
+    border-radius: 50%; }
+
 .details {
   width: 100%;
   max-width: 470px;
