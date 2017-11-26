@@ -1,4 +1,5 @@
 .form {
+  $_: &;
   @include flexbox;
   @include flex-direction(column);
   width: 100%;
@@ -7,6 +8,12 @@
     @include flexbox;
     @include justify-content(space-between);
     margin-bottom: 20px;
+  }
+  &__field {
+    position: relative;
+    &:first-of-type {
+      margin-right: 20px;
+    }
   }
   &__input, &__textarea {
     background-color: $color-form;
@@ -24,19 +31,28 @@
     &:invalid {
       border-color: red;
     }
+    &:placeholder-shown + #{$_}__label {
+      position: absolute;
+      opacity: 0;
+      transform: translateY(0);
+    }
   }
   &__input {
     height: 60px;
     width: 100%;
     max-width: 275px;
-    &:first-of-type {
-      margin-right: 20px;
-    }
   }
   &__textarea {
     height: 165px;
     resize: none;
     margin-bottom: 20px;
-    
+  }
+  &__label {
+    position: absolute;
+    transform: translateY(-25px);
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 300ms ease-out;
   }
 }
