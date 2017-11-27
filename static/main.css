@@ -569,8 +569,6 @@ a {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .contact__details {
-    margin-top: 50px; }
   .contact__form {
     margin-top: 50px; }
 
