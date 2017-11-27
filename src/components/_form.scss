@@ -6,14 +6,12 @@
   max-width: 570px;
   &__inline {
     @include flexbox;
+    @include flex-direction(column);
     @include justify-content(space-between);
-    margin-bottom: 20px;
   }
   &__field {
     position: relative;
-    &:first-of-type {
-      margin-right: 20px;
-    }
+    margin-bottom: 20px;
   }
   &__input, &__textarea {
     background-color: $color-form;
@@ -34,7 +32,7 @@
   &__input {
     height: 60px;
     width: 100%;
-    max-width: 275px;
+    //max-width: 275px;
   }
   &__textarea {
     height: 165px;
@@ -49,4 +47,20 @@
     opacity: 1;
     transition: all 300ms ease-out;
   }
+}
+
+
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin form\@screen-small {
+    .form {
+      &__inline {
+        @include flex-direction(row);
+      }
+      &__field {
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+    }
 }
