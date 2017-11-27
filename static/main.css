@@ -574,6 +574,23 @@ a {
   .contact__form {
     margin-top: 50px; }
 
+.button {
+  padding: 10px 30px;
+  max-width: 90px;
+  border: none;
+  background-color: #ea5b58;
+  font-size: 11px;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: background-color 200ms linear;
+  cursor: pointer; }
+  .button--large {
+    padding: 18px 50px;
+    max-width: 145px;
+    font-size: 18px; }
+  .button:hover {
+    background-color: #e87371; }
+
 .logo {
   font-size: 24px;
   font-weight: 400; }
@@ -913,23 +930,9 @@ a {
     left: 0;
     opacity: 1;
     transition: all 300ms ease-out; }
-
-.button {
-  padding: 10px 30px;
-  max-width: 90px;
-  border: none;
-  background-color: #ea5b58;
-  font-size: 11px;
-  color: #ffffff;
-  border-radius: 3px;
-  transition: background-color 200ms linear;
-  cursor: pointer; }
-  .button--large {
-    padding: 18px 50px;
-    max-width: 145px;
-    font-size: 18px; }
-  .button:hover {
-    background-color: #e87371; }
+  .form__button {
+    max-width: none;
+    width: 100%; }
 
 .socials {
   width: 170px;
