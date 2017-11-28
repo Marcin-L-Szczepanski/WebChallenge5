@@ -5,7 +5,8 @@
   @include justify-content(space-between);
   @include align-items(center);
   height: 190px;
-  width: 230px;
+  width: 90%;
+  //width: 230px;
   margin-bottom: 50px;
   &:hover #{$_}__icon {
       transform: scale(1.3);

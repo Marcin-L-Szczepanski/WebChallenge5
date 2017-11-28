@@ -670,7 +670,7 @@ a {
   -ms-align-items: center;
   align-items: center;
   height: 190px;
-  width: 230px;
+  width: 90%;
   margin-bottom: 50px; }
   .card:hover .card__icon {
     transform: scale(1.3); }
