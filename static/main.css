@@ -671,6 +671,7 @@ a {
   align-items: center;
   height: 190px;
   width: 90%;
+  max-width: 370px;
   margin-bottom: 50px; }
   .card:hover .card__icon {
     transform: scale(1.3); }
