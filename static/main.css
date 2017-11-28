@@ -992,8 +992,10 @@ a {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
 
-  .card:last-of-type {
-    margin-bottom: 50px; }
+  .card {
+    width: 230px; }
+    .card:last-of-type {
+      margin-bottom: 50px; }
 
   .intro__title {
     margin-bottom: 40px; }
@@ -1015,12 +1017,17 @@ a {
     margin-right: 20px; }
   .form__button {
     max-width: 145px; } }
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 730px) {
   .wrapper--high {
     padding-top: 150px;
-    padding-bottom: 150px; } }
-@media only screen and (min-width: 850px) {
+    padding-bottom: 150px; }
+
   .card {
-    width: 230px; } }
+    margin-left: 50px;
+    margin-right: 50px; } }
+@media only screen and (min-width: 1024px) {
+  .card {
+    margin-left: 0;
+    margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

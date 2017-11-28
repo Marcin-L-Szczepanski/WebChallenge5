@@ -22,19 +22,19 @@
 }
 
 // Medium screen (@screen-medium)
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 730px) {
   //@include intro\@screen-medium;
   @include wrapper\@screen-medium;
+  @include card\@screen-medium;
 }
 
 // Large screen (@screen-large)
 @media only screen and (min-width: 850px) {
-  @include card\@screen-large;
 }
 
 // Wide screen (@screen-wide)
 @media only screen and (min-width: 1024px) {
-
+  @include card\@screen-wide;
 }
 
 // Mega screen (@screen-mega)

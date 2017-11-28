@@ -41,15 +41,26 @@
   // Small screen  >  650px (@screen-small)
   @mixin card\@screen-small {
     .card {
+      width: 230px;
       &:last-of-type {
         margin-bottom: 50px;
       }
     }
   }
-  // Small screen  >  650px (@screen-small)
-  @mixin card\@screen-large {
+
+  // Large screen  >  730px (@screen-medium)
+  @mixin card\@screen-medium {
     .card {
-      width: 230px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  // Wide screen  >  1024px (@screen-wide)
+  @mixin card\@screen-wide {
+    .card {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
