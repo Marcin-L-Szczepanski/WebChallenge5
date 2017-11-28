@@ -3,4 +3,15 @@
   @include flex-direction(column);
   @include justify-content(space-between);
   @include align-items(center);
+  width: 100%;
 }
+
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin card-wrapper\@screen-small {
+    .card-wrapper {
+      @include flex-direction(row);
+      @include justify-content(space-around);
+      @include flex-wrap(wrap);
+    }
+  }

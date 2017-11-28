@@ -6,7 +6,7 @@
   @include align-items(center);
   height: 190px;
   width: 90%;
-  max-width: 370px;
+  max-width: 280px;
   //width: 230px;
   margin-bottom: 50px;
   &:hover #{$_}__icon {
@@ -37,5 +37,20 @@
   }
 }
 
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin card\@screen-small {
+    .card {
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  // Small screen  >  650px (@screen-small)
+  @mixin card\@screen-large {
+    .card {
+      width: 230px;
+    }
+  }
 
 // original:   .card height: 220px;

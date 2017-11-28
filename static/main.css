@@ -460,7 +460,8 @@ a {
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .banner {
   text-align: center;
@@ -671,7 +672,7 @@ a {
   align-items: center;
   height: 190px;
   width: 90%;
-  max-width: 370px;
+  max-width: 280px;
   margin-bottom: 50px; }
   .card:hover .card__icon {
     transform: scale(1.3); }
@@ -976,6 +977,24 @@ a {
     font-size: 21px;
     margin-bottom: 50px; } }
 @media only screen and (min-width: 650px) {
+  .card-wrapper {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+  .card:last-of-type {
+    margin-bottom: 50px; }
+
   .intro__title {
     margin-bottom: 40px; }
   .intro__subtitle {
@@ -1000,5 +1019,8 @@ a {
   .wrapper--high {
     padding-top: 150px;
     padding-bottom: 150px; } }
+@media only screen and (min-width: 850px) {
+  .card {
+    width: 230px; } }
 
 /*# sourceMappingURL=main.css.map */

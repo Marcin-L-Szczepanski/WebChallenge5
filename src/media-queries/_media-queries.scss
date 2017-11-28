@@ -10,6 +10,8 @@
 
 // Small screen (@screen-small)
 @media only screen and (min-width: 650px) {
+  @include card-wrapper\@screen-small;
+  @include card\@screen-small;
   @include intro\@screen-small;
   @include form\@screen-small;
 }
@@ -27,7 +29,7 @@
 
 // Large screen (@screen-large)
 @media only screen and (min-width: 850px) {
-
+  @include card\@screen-large;
 }
 
 // Wide screen (@screen-wide)
