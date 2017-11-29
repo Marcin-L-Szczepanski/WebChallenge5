@@ -3,7 +3,7 @@
   @include flex-direction(column);
   @include align-items(center);
   &__portrait {
-    width: 275px;
+    min-width: 275px;
     height: 275px;
     border-radius: 50%;
     @include flexbox;

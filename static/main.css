@@ -796,7 +796,7 @@ a {
   -ms-align-items: center;
   align-items: center; }
   .opinion__portrait {
-    width: 275px;
+    min-width: 275px;
     height: 275px;
     border-radius: 50%;
     display: -webkit-box;
