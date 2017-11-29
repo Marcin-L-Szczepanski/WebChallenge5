@@ -796,6 +796,7 @@ a {
   -ms-align-items: center;
   align-items: center; }
   .opinion__portrait {
+    width: 275px;
     min-width: 275px;
     height: 275px;
     border-radius: 50%;
@@ -837,7 +838,8 @@ a {
     width: 80%;
     margin-bottom: 20px;
     position: relative;
-    font-style: italic; }
+    font-style: italic;
+    text-align: justify; }
     .opinion__text::before {
       content: '" ';
       position: absolute;
@@ -1024,7 +1026,22 @@ a {
 
   .card {
     margin-left: 50px;
-    margin-right: 50px; } }
+    margin-right: 50px; }
+
+  .opinion {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 90%; }
+    .opinion__quote {
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      -ms-align-items: flex-start;
+      align-items: flex-start;
+      margin-left: 8%; }
+    .opinion__text {
+      width: 100%; } }
 @media only screen and (min-width: 1024px) {
   .card {
     margin-left: 0;
