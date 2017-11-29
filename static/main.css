@@ -1034,6 +1034,8 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     width: 90%; }
+    .opinion__portrait {
+      margin-bottom: 0; }
     .opinion__quote {
       -webkit-align-items: flex-start;
       -moz-align-items: flex-start;

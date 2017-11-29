@@ -49,6 +49,9 @@
     .opinion {
       @include flex-direction(row); 
       width: 90%;
+      &__portrait {
+        margin-bottom: 0;
+      }
       &__quote {
         @include align-items(flex-start);
         margin-left: 8%;
