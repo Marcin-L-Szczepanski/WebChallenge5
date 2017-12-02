@@ -718,7 +718,7 @@ a {
   flex: auto;
   width: 100%;
   max-width: 370px;
-  margin: 15px 0;
+  margin: 0.5rem;
   overflow: hidden; }
   .postcard::after {
     content: "";
@@ -1010,6 +1010,25 @@ a {
   .intro__pic {
     margin-bottom: 0; }
 
+  .gallery__body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+
+  .postcard {
+    width: calc(50% - 1rem); }
+
   .form__inline {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -1047,6 +1066,9 @@ a {
 @media only screen and (min-width: 1024px) {
   .card {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .postcard {
+    width: calc((100% / 3) - 1rem); } }
 
 /*# sourceMappingURL=main.css.map */

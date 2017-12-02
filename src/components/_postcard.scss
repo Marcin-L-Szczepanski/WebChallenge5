@@ -3,7 +3,7 @@
     @include flex(auto);
     width: 100%;
     max-width: 370px;
-    margin: 15px 0;
+    margin: 0.5rem;
     overflow: hidden;
   &::after {
       @include after;
@@ -53,3 +53,18 @@
     font-size: $font-size-postcard-descr;
   }
 }
+
+
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin postcard\@screen-small {
+    .postcard {
+      width: calc(50% - 1rem);
+    }
+  }
+  // Wide screen  >  1024px (@screen-wide)
+  @mixin postcard\@screen-wide {
+    .postcard {
+      width: calc((100% / 3) - 1rem);
+    }
+  }

@@ -9,8 +9,6 @@
     }
   }
   &__body {
- //   @include flexbox;
-//    @include flex-flow(row wrap);
     max-width: 1200px;
   }
   &__footer {
@@ -31,6 +29,19 @@
   }
 }
 
+
+// Media queries 
+  // Small screen  >  650px (@screen-small)
+  @mixin gallery\@screen-small {
+    .gallery {
+      &__body {      
+        @include flexbox;
+        @include flex-flow(row wrap);
+        @include justify-content(center);
+      }
+    }
+  }
+    
 
 @keyframes arrow {
   0% {

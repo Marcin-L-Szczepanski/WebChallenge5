@@ -13,6 +13,8 @@
   @include card-wrapper\@screen-small;
   @include card\@screen-small;
   @include intro\@screen-small;
+  @include gallery\@screen-small;
+  @include postcard\@screen-small;
   @include form\@screen-small;
 }
 
@@ -36,6 +38,7 @@
 // Wide screen (@screen-wide)
 @media only screen and (min-width: 1024px) {
   @include card\@screen-wide;
+  @include postcard\@screen-wide;
 }
 
 // Mega screen (@screen-mega)
