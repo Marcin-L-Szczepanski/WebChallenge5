@@ -6,7 +6,7 @@ const menuList = document.querySelector("#menu__list");
   const menu = document.querySelector("#menu");
   
   showHideButton.innerHTML = "Menu";
-  showHideButton.classList.add("button");
+  showHideButton.classList.add("menu__button", "button");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
   menu.insertBefore(showHideButton, menu.firstElementChild);

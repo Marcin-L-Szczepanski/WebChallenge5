@@ -606,13 +606,20 @@ a {
   .logo--bold {
     font-weight: 700; }
 
+.menu__button {
+  position: fixed;
+  bottom: 5%;
+  left: calc(50vw - 45px);
+  width: 90px;
+  z-index: 100; }
 .menu__list {
-  position: absolute;
-  top: 80px;
+  position: fixed;
+  bottom: calc(5% + 32px);
   left: 5%;
   width: 90vw;
   background-color: #475a85;
-  text-align: center; }
+  text-align: center;
+  z-index: 100; }
   .menu__list--hidden {
     display: none; }
 .menu__item {

@@ -1,11 +1,19 @@
 .menu {
+  &__button {
+    position: fixed;
+    bottom: 5%;
+    left: calc(50vw - 45px);
+    width: 90px;
+    z-index: 100;
+  }
   &__list {
-    position: absolute;
-    top: 80px;
+    position: fixed;
+    bottom: calc(5% + 32px);
     left: 5%;
     width: 90vw;
     background-color: $color-bg-light;
     text-align: center;
+    z-index: 100;
     &--hidden {
       display: none;
     }
