@@ -609,15 +609,24 @@ a {
 .menu__button {
   position: fixed;
   bottom: 5%;
-  left: calc(50vw - 45px);
-  width: 90px;
+  left: calc(50vw - 100px);
+  width: 200px;
+  max-width: none;
+  background-color: #0d0b11;
+  opacity: .5;
   z-index: 100; }
+  .menu__button:hover {
+    background-color: #0d0b11;
+    opacity: 1; }
+  .menu__button:focus {
+    background-color: #0d0b11;
+    opacity: 1; }
 .menu__list {
   position: fixed;
   bottom: calc(5% + 32px);
-  left: 5%;
-  width: 90vw;
-  background-color: #475a85;
+  left: 0;
+  width: 100vw;
+  background-color: #0d0b11;
   text-align: center;
   z-index: 100; }
   .menu__list--hidden {
