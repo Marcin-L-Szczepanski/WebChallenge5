@@ -1,22 +1,31 @@
-(function () {
+const showHideButton = document.createElement("button");
+const menuList = document.querySelector("#menu__list");
+
+(function createMenuButton() {
   "use strict";
   const menu = document.querySelector("#menu");
-  const showHideButton = document.createElement("button");
-  const menuList = document.querySelector(".menu__list");
   
   showHideButton.innerHTML = "Menu";
   showHideButton.classList.add("button", "button--large");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
   menu.insertBefore(showHideButton, menu.firstElementChild);
-  
-  return { showHideButton };
   }());
 
 function hideMenu () {
-  showHideButton;
+  showHideButton.setAttribute("aria-expanded", "false");
+  menuList.classList.add("menu__list--hidden");
 }
 
 function showMenu () {
-  
+  showHideButton.setAttribute("aria-expanded", "true");
+  menuList.classList.remove("menu__list--hidden");
 }
+
+showHideButton.addEventListener("click", function() {
+  if (menuList.classList.contains("menu__list--hidden")) {
+    showMenu();
+  } else {
+    hideMenu();
+  }
+}, hideMenu());

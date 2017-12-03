@@ -606,6 +606,9 @@ a {
   .logo--bold {
     font-weight: 700; }
 
+.menu__list--hidden {
+  display: none; }
+
 .intro {
   text-align: center; }
   .intro__text {
