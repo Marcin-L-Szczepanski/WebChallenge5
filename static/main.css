@@ -441,6 +441,16 @@ a {
   .wrapper--high {
     padding-top: 100px;
     padding-bottom: 100px; }
+  .wrapper--row {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
 
 .card-wrapper {
   display: -webkit-box;
