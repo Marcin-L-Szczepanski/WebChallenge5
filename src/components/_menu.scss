@@ -6,6 +6,10 @@
     width: 80%;
     max-width: none;
     background-color: $color-navbar;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     opacity: 0.8;
     z-index: 100;
     &:hover {

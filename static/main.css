@@ -603,6 +603,10 @@ a {
   width: 80%;
   max-width: none;
   background-color: #0d0b11;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   opacity: 0.8;
   z-index: 100; }
   .menu__button:hover {
