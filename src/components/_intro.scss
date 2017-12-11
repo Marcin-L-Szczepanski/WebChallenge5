@@ -1,5 +1,8 @@
 .intro {
     text-align: center;
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
   &__text {
     width: 100%;
     max-width: 570px;
@@ -53,6 +56,11 @@
   // Small screen  >  650px (@screen-small)
   @mixin intro\@screen-small {
     .intro {
+      @include flex-direction(row);
+      text-align: left;
+      &__text {
+        margin-right: 5%;
+      }
       &__title {
          margin-bottom: 40px;
       }
