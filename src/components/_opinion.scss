@@ -2,6 +2,7 @@
   @include flexbox;
   @include flex-direction(column);
   @include align-items(center);
+  transition: opacity 700ms linear;
   &__portrait {
     width: 275px;
     min-width: 275px;
@@ -48,13 +49,14 @@
   @mixin opinion\@screen-medium {
     .opinion {
       @include flex-direction(row); 
-      width: 90%;
+      min-width: 100%;
       &__portrait {
         margin-bottom: 0;
       }
       &__quote {
         @include align-items(flex-start);
         margin-left: 8%;
+        margin-right: 3%;
       }
       &__text {
         width: 100%;
