@@ -616,6 +616,7 @@ a {
   width: 80%;
   max-width: none;
   background-color: #0d0b11;
+  border: 1px solid #ffffff;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 12px;
