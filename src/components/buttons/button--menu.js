@@ -14,9 +14,16 @@ let currentPosition = 0;
   }());
 
 function hideShowMenuButton () {
-  if (currentPosition > window.pageYOffset) { 
+  if (window.pageYOffset <= 0 ) { 
+    showHideButton.classList.remove("menu__button--hidden"); 
+    showHideButton.classList.add("menu__button--top");
+    menuList.classList.add("menu__list--top"); 
+  }
+  else if (currentPosition > window.pageYOffset) { 
+    showHideButton.classList.remove("menu__button--top");
     showHideButton.classList.remove("menu__button--hidden"); 
   } else {
+    showHideButton.classList.remove("menu__button--top");
     showHideButton.classList.add("menu__button--hidden");
   }
   currentPosition = window.pageYOffset;
@@ -48,9 +55,8 @@ showHideButton.addEventListener("click", function() {
   }
 }, hideMenu());
 
-  window.addEventListener('click', function(e){
-	
-	if (menuList.contains(e.target)){
-  	 hideMenu();
-    }
+window.addEventListener("click", function(e){	
+  if (menuList.contains(e.target)){
+    hideMenu();
+  }
 });

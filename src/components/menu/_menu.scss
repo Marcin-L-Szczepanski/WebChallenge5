@@ -17,6 +17,10 @@
       background-color: $color-navbar;
       opacity: 1;
     }
+    &--top {
+      top: 0;
+      bottom: auto;
+    }
     &--hidden {
       bottom: -30px;
       left: calc(50% - 30%);
@@ -40,6 +44,10 @@
     background-color: $color-navbar;
     text-align: center;
     z-index: 100;
+    &--top {
+      top: 32px;
+      bottom: auto;
+    }
     &--hidden {
       display: none;
     }

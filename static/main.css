@@ -626,6 +626,9 @@ a {
   .menu__button--open {
     background-color: #0d0b11;
     opacity: 1; }
+  .menu__button--top {
+    top: 0;
+    bottom: auto; }
   .menu__button--hidden {
     bottom: -30px;
     left: calc(50% - 30%);
@@ -645,6 +648,9 @@ a {
   background-color: #0d0b11;
   text-align: center;
   z-index: 100; }
+  .menu__list--top {
+    top: 32px;
+    bottom: auto; }
   .menu__list--hidden {
     display: none; }
 .menu__item {
