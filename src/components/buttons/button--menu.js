@@ -32,7 +32,6 @@ function showMenu () {
   showHideButton.setAttribute("aria-expanded", "true");
   showHideButton.classList.add("menu__button--open");
   menuList.classList.remove("menu__list--hidden");
-  
 }
 
 document.addEventListener("scroll", function() {
@@ -48,3 +47,10 @@ showHideButton.addEventListener("click", function() {
     hideMenu();
   }
 }, hideMenu());
+
+  window.addEventListener('click', function(e){
+	
+	if (menuList.contains(e.target)){
+  	 hideMenu();
+    }
+});
