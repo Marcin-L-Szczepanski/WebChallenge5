@@ -12,6 +12,11 @@
     border-bottom-right-radius: 12px;
     opacity: 0.8;
     z-index: 100;
+    transition: all 500ms linear;
+    &--hidden {
+      bottom: 0;
+      opacity: 0;
+    }
     &:hover {
       background-color: $color-navbar;
       opacity: 1;

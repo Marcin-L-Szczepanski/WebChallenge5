@@ -621,7 +621,11 @@ a {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   opacity: 0.8;
-  z-index: 100; }
+  z-index: 100;
+  transition: all 500ms linear; }
+  .menu__button--hidden {
+    bottom: 0;
+    opacity: 0; }
   .menu__button:hover {
     background-color: #0d0b11;
     opacity: 1; }
@@ -859,7 +863,10 @@ a {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  opacity: 0;
   transition: opacity 700ms linear; }
+  .opinion--current {
+    opacity: 1; }
   .opinion__portrait {
     width: 275px;
     min-width: 275px;

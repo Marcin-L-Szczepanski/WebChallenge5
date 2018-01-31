@@ -2,7 +2,11 @@
   @include flexbox;
   @include flex-direction(column);
   @include align-items(center);
+  opacity: 0;
   transition: opacity 700ms linear;
+  &--current {
+    opacity: 1;
+  }
   &__portrait {
     width: 275px;
     min-width: 275px;
