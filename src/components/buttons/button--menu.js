@@ -24,16 +24,21 @@ function hideShowMenuButton () {
 
 function hideMenu () {
   showHideButton.setAttribute("aria-expanded", "false");
+  showHideButton.classList.remove("menu__button--open");
   menuList.classList.add("menu__list--hidden");
 }
 
 function showMenu () {
   showHideButton.setAttribute("aria-expanded", "true");
+  showHideButton.classList.add("menu__button--open");
   menuList.classList.remove("menu__list--hidden");
+  
 }
 
 document.addEventListener("scroll", function() {
-    hideShowMenuButton();
+    if (!showHideButton.classList.contains("menu__button--open")) {
+      hideShowMenuButton();
+    }
 });
 
 showHideButton.addEventListener("click", function() {

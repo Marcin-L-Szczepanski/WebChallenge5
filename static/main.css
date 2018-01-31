@@ -622,10 +622,15 @@ a {
   border-bottom-right-radius: 12px;
   opacity: 0.8;
   z-index: 100;
-  transition: all 500ms linear; }
+  transition: all 500ms ease-in; }
+  .menu__button--open {
+    background-color: #0d0b11;
+    opacity: 1; }
   .menu__button--hidden {
-    bottom: 0;
-    opacity: 0; }
+    bottom: -30px;
+    left: calc(50vw - 30%);
+    width: 60%;
+    opacity: 0 !important; }
   .menu__button:hover {
     background-color: #0d0b11;
     opacity: 1; }
