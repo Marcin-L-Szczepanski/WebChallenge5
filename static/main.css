@@ -628,7 +628,7 @@ a {
     opacity: 1; }
   .menu__button--hidden {
     bottom: -30px;
-    left: calc(50vw - 30%);
+    left: calc(50% - 30%);
     width: 60%;
     opacity: 0 !important; }
   .menu__button:hover {
