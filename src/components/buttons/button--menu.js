@@ -25,6 +25,7 @@ function hideShowMenuButton () {
   } else {
     showHideButton.classList.remove("menu__button--top");
     showHideButton.classList.add("menu__button--hidden");
+    menuList.classList.remove("menu__list--top"); 
   }
   currentPosition = window.pageYOffset;
 }
