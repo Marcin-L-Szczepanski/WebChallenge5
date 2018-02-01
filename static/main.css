@@ -416,6 +416,8 @@ a {
 .section--white {
   background-color: #ffffff;
   color: #323232; }
+.section--footer {
+  background-color: #161828; }
 
 .wrapper {
   width: 100%;
@@ -1054,6 +1056,15 @@ a {
     width: 60%;
     height: 60%;
     fill: #475a85; }
+
+.footer {
+  color: #76777f; }
+  .footer__copyright {
+    margin: 10px 0;
+    font-size: 14px; }
+  .footer__logo {
+    margin: 10px 0;
+    font-size: 24px; }
 
 @media only screen and (min-width: 370px) {
   .intro__title {

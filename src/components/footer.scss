@@ -1,0 +1,11 @@
+.footer {
+  color: $grey-light;
+  &__copyright {
+    margin: 10px 0;  
+    font-size: $font-size-tiny;
+  }
+  &__logo {
+    margin: 10px 0;
+    font-size: $font-size-medium;
+  }
+}
