@@ -606,10 +606,14 @@ a {
     background-color: #e87371; }
 
 .logo {
-  font-size: 24px;
   font-weight: 400; }
   .logo--bold {
     font-weight: 700; }
+
+.header {
+  padding-top: 50px; }
+  .header__logo {
+    font-size: 24px; }
 
 .menu__button {
   position: fixed;
@@ -1058,7 +1062,8 @@ a {
     fill: #475a85; }
 
 .footer {
-  color: #76777f; }
+  color: #76777f;
+  padding-bottom: 100px; }
   .footer__copyright {
     margin: 10px 0;
     font-size: 14px; }
