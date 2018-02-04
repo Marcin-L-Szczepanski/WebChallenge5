@@ -1104,9 +1104,8 @@ a {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    text-align: left; }
-    .intro__text {
-      margin-right: 5%; }
+    text-align: left;
+    width: 90%; }
     .intro__title {
       margin-bottom: 40px; }
     .intro__subtitle {
@@ -1114,7 +1113,8 @@ a {
       margin-bottom: 60px; }
     .intro__graphic {
       width: 100%;
-      order: 0; }
+      order: 0;
+      text-align: right; }
     .intro__pic {
       margin-bottom: 0; }
 
