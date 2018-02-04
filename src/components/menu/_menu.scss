@@ -65,3 +65,19 @@
     padding:1.25em 1.25em;
   }
 }
+
+
+  // Large screen (@screen-large)
+  @mixin menu\@screen-large {
+    .menu {
+      &__button {
+        display: none;
+      }
+      &__list {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        position: static;
+      }
+    }
+  }

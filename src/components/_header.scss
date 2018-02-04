@@ -4,3 +4,13 @@
     font-size: $font-size-logo;
   }
 }
+
+
+  // Large screen (@screen-large)
+  @mixin header\@screen-large {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+    }
+  }

@@ -1172,6 +1172,19 @@ a {
       margin-right: 3%; }
     .opinion__text {
       width: 100%; } }
+@media only screen and (min-width: 850px) {
+  .menu__button {
+    display: none; }
+  .menu__list {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    position: static; }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; } }
 @media only screen and (min-width: 1024px) {
   .card {
     margin-left: 0;
