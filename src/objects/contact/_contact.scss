@@ -12,7 +12,9 @@
 // Wide screen (@screen-wide)
   @mixin contact\@screen-wide {
     .contact {
+      width: 100%;
       flex-direction: row;
+      justify-content: space-between;
       &__form {
         margin-top: 0;
       }

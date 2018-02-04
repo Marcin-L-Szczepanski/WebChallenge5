@@ -1198,7 +1198,9 @@ a {
     width: calc((100% / 3) - 1rem); }
 
   .contact {
-    flex-direction: row; }
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between; }
     .contact__form {
       margin-top: 0; } }
 
