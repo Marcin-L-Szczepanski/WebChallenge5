@@ -1184,7 +1184,8 @@ a {
   .header {
     display: flex;
     justify-content: space-between;
-    width: 90%; } }
+    width: 90%;
+    padding-top: 0; } }
 @media only screen and (min-width: 1024px) {
   .card {
     margin-left: 0;
