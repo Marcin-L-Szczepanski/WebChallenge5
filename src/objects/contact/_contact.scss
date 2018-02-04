@@ -7,3 +7,14 @@
   margin-top: 50px;
   }
 }
+
+
+// Wide screen (@screen-wide)
+  @mixin contact\@screen-wide {
+    .contact {
+      flex-direction: row;
+      &__form {
+        margin-top: 0;
+      }
+    }
+}

@@ -41,6 +41,7 @@
 @media only screen and (min-width: 1024px) {
   @include card\@screen-wide;
   @include postcard\@screen-wide;
+  @include contact\@screen-wide;
 }
 
 // Mega screen (@screen-mega)

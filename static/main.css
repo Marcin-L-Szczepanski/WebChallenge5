@@ -1192,6 +1192,11 @@ a {
     margin-right: 0; }
 
   .postcard {
-    width: calc((100% / 3) - 1rem); } }
+    width: calc((100% / 3) - 1rem); }
+
+  .contact {
+    flex-direction: row; }
+    .contact__form {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=main.css.map */
