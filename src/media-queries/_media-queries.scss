@@ -35,6 +35,7 @@
 @media only screen and (min-width: 850px) {
   @include menu\@screen-large;
   @include header\@screen-large;
+  @include footer\@screen-large;
 }
 
 // Wide screen (@screen-wide)

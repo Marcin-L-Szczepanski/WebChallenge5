@@ -10,3 +10,11 @@
     font-size: $font-size-medium;
   }
 }
+
+
+  // Large screen (@screen-large)
+  @mixin footer\@screen-large {
+    .footer {
+      padding-bottom: 30px;
+    }
+}
