@@ -868,6 +868,8 @@ a {
     margin-bottom: 25px;
     width: 80%;
     font-size: 14px; }
+  .postcard__icon {
+    cursor: pointer; }
   .postcard__modal {
     position: fixed;
     top: 0;

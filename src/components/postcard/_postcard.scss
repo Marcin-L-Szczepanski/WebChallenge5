@@ -52,6 +52,9 @@
     width: 80%;
     font-size: $font-size-postcard-descr;
   }
+  &__icon {
+    cursor: pointer;
+  }
   &__modal {
     position: fixed;
     top: 0;
