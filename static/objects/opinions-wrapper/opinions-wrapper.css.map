@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,iBAAkB;EAChB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,MAAM",
-"sources": ["../../../src/objects/opinions-wrapper/opinions-wrapper.scss"],
-"names": [],
-"file": "opinions-wrapper.css"
-}
