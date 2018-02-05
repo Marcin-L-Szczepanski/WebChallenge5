@@ -7,10 +7,14 @@ for (var i = 0; i < postcard.length; i++) {
   postcard[i].addEventListener("click", function() {
     const postcardModal = document.createElement("div");
     const postcardModalPicture = document.createElement("img");
-    galleryBody.appendChild(postcardModal);
+    const postcardModalButton = document.createElement("button");
     postcardModal.classList.add("postcard__modal");
-    postcardModal.appendChild(postcardModalPicture);
-    postcardModalPicture.src = this.parentElement.parentElement.firstElementChild.src;
     postcardModalPicture.classList.add("postcard__modal-picture");
+    postcardModalButton.classList.add("postcard__modal-button");
+    postcardModalButton.innerHTML = "X";
+    galleryBody.appendChild(postcardModal);
+    postcardModal.appendChild(postcardModalPicture);
+    postcardModal.appendChild(postcardModalButton);
+    postcardModalPicture.src = this.parentElement.parentElement.firstElementChild.src;
   }, false)
 }
