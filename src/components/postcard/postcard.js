@@ -16,5 +16,10 @@ for (var i = 0; i < postcard.length; i++) {
     postcardModal.appendChild(postcardModalPicture);
     postcardModal.appendChild(postcardModalButton);
     postcardModalPicture.src = this.parentElement.parentElement.firstElementChild.src;
+    
+    postcardModalButton.addEventListener("click", function () {
+                                     galleryBody.removeChild(postcardModal);
+                                     }, false);
   }, false)
 }
+
