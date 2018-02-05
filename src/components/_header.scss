@@ -9,8 +9,8 @@
   // Large screen (@screen-large)
   @mixin header\@screen-large {
     .header {
-      display: flex;
-      justify-content: space-between;
+      @include flexbox;
+      @include justify-content(space-between);
       width: 90%;
       padding-top: 0;
     }

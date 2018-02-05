@@ -1177,14 +1177,30 @@ a {
   .menu__button {
     display: none; }
   .menu__list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
     justify-content: flex-end;
+    -ms-flex-pack: flex-end;
     width: auto;
     position: static; }
 
   .header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
     justify-content: space-between;
+    -ms-flex-pack: space-between;
     width: 90%;
     padding-top: 0; }
 
@@ -1200,8 +1216,15 @@ a {
 
   .contact {
     width: 100%;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
-    justify-content: space-between; }
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between; }
     .contact__form {
       margin-top: 0; } }
 

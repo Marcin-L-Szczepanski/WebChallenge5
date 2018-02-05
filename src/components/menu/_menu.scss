@@ -74,8 +74,8 @@
         display: none;
       }
       &__list {
-        display: flex;
-        justify-content: flex-end;
+        @include flexbox;
+        @include justify-content(flex-end);
         width: auto;
         position: static;
       }
