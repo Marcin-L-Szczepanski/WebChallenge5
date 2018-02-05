@@ -868,6 +868,19 @@ a {
     margin-bottom: 25px;
     width: 80%;
     font-size: 14px; }
+  .postcard__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35); }
+  .postcard__modal-picture {
+    width: 70%;
+    display: block;
+    margin: auto; }
 
 .opinion {
   display: -webkit-box;
