@@ -887,8 +887,9 @@ a {
   .postcard__modal-button {
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.75);
-    border: none; }
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer; }
 
 .opinion {
   display: -webkit-box;
