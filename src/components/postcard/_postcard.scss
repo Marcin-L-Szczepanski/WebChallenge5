@@ -72,11 +72,12 @@
     margin: auto;
   }
   &__modal-button {
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 25px;
   }
 }
 
