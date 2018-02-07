@@ -70,6 +70,7 @@
     max-width: 750px;
     display: block;
     margin: auto;
+    @include animation(openModalPicture, 300ms, linear, 1);
   }
   &__modal-button {
     width: 50px;
@@ -95,3 +96,15 @@
       width: calc((100% / 3) - 1rem);
     }
   }
+
+
+@include keyframes(openModalPicture) {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 70%;
+    opacity: 1;
+  }
+}

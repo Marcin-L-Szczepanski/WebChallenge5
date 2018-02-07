@@ -17,6 +17,21 @@
 	 @include transform(translate($translate));
 } 
 
+// Animation //
+@mixin animation($name, $duration, $timing-function, $iteration) {
+    -webkit-animation: $name $duration $timing-function $iteration;
+            animation: $name $duration $timing-function $iteration;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
 // After pseudo-element
 @mixin after {
   content: "";

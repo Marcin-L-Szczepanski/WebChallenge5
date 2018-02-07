@@ -18,8 +18,8 @@ for (var i = 0; i < postcard.length; i++) {
     postcardModalPicture.src = this.parentElement.parentElement.firstElementChild.src;
     
     postcardModalButton.addEventListener("click", function () {
-                                     galleryBody.removeChild(postcardModal);
-                                     }, false);
+     galleryBody.removeChild(postcardModal);
+     }, false);
   }, false)
 }
 
