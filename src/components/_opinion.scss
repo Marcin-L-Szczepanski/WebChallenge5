@@ -45,6 +45,21 @@
     font-size: $font-size-opinion-author;
     font-weight: $bold;
   }
+  &__button {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
 }
 
 // Media queries 

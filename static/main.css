@@ -560,7 +560,7 @@ a {
     opacity: 0; } }
 .opinions-wrapper {
   position: relative;
-  width: 100%;
+  width: 90%;
   overflow-x: hidden;
   display: -webkit-box;
   display: -moz-box;
@@ -979,6 +979,18 @@ a {
   .opinion__author {
     font-size: 24px;
     font-weight: 700; }
+  .opinion__button {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer; }
+    .opinion__button--left {
+      left: 0; }
+    .opinion__button--right {
+      right: 0; }
 
 .details {
   width: 100%;
