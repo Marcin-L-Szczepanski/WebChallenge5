@@ -1212,7 +1212,8 @@ a {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    min-width: 100%; }
+    width: 85%;
+    margin: 0 auto; }
     .opinion__portrait {
       margin-bottom: 0; }
     .opinion__quote {

@@ -67,7 +67,8 @@
   @mixin opinion\@screen-medium {
     .opinion {
       @include flex-direction(row); 
-      min-width: 100%;
+      width: 85%;
+      margin: 0 auto;
       &__portrait {
         margin-bottom: 0;
       }
