@@ -299,9 +299,15 @@
     <script>
       const mySiema = new Siema({
       loop: true,
-      onInit: (printSlideIndex, createButtons),
+      onInit: createSliderControlers,
       onChange: printSlideIndex,
       });
+      
+      function createSliderControlers() {
+        createButtons();
+        createIndex();
+        printSlideIndex();
+      }
       function createButtons() {
         const btnLeft = document.createElement('button');
         const btnRight = document.createElement('button');
@@ -316,13 +322,16 @@
         btnRight.addEventListener('click', () => mySiema.next());
       }
       
+      function createIndex() {
+        const slideIndex = document.createElement('p');      
+        slideIndex.classList.add("js-index");
+        const span = document.createElement('span');
+        const box = document.querySelector(".siema");
+        box.appendChild(slideIndex);
+        document.querySelector('.js-index').innerHTML = this.currentSlide
+      }
+      
       function printSlideIndex() {
-      const slideIndex = document.createElement('p');      
-      slideIndex.classList.add("js-index");
-      const span = document.createElement('span'); 
-        
-      const box = document.querySelector(".siema");
-      box.appendChild(slideIndex);
       document.querySelector('.js-index').innerHTML = this.currentSlide
 }
     </script>
