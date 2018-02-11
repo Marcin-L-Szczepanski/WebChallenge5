@@ -292,8 +292,31 @@
     <script src="src/tools/siema.min.js"></script>
     <script>
       const mySiema = new Siema({
-      loop: true
+      loop: true,
+      onInit: printSlideIndex,
+        onChange: printSlideIndex,
       });
+      const btnLeft = document.createElement('button');
+      const btnRight = document.createElement('button');
+      btnLeft.appendChild(document.createTextNode('Left'));
+      btnRight.appendChild(document.createTextNode('Right'));
+      btnLeft.classList.add("button-left");
+      btnRight.classList.add("button-right");
+      const box = document.querySelector(".siema");
+      box.appendChild(btnLeft);
+      box.appendChild(btnRight);
+      btnLeft.addEventListener('click', () => mySiema.prev());
+      btnRight.addEventListener('click', () => mySiema.next());
+      
+      function printSlideIndex() {
+      const slideIndex = document.createElement('p');      
+      slideIndex.classList.add("js-index");
+      const span = document.createElement('span'); 
+        
+      const box = document.querySelector(".siema");
+      box.appendChild(slideIndex);
+      document.querySelector('.js-index').innerHTML = this.currentSlide
+}
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqHPH32ok3-eIoF1_Io62O5d3WgiC7c0Y&callback=initMap"></script>
 
