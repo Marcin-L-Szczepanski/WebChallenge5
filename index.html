@@ -291,7 +291,9 @@
     <script src="src/objects/map/map.js"></script>
     <script src="src/tools/siema.min.js"></script>
     <script>
-      new Siema();
+      const mySiema = new Siema({
+      loop: true
+      });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqHPH32ok3-eIoF1_Io62O5d3WgiC7c0Y&callback=initMap"></script>
 
