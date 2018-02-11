@@ -293,20 +293,22 @@
     <script>
       const mySiema = new Siema({
       loop: true,
-      onInit: printSlideIndex,
-        onChange: printSlideIndex,
+      onInit: (printSlideIndex, createButtons),
+      onChange: printSlideIndex,
       });
-      const btnLeft = document.createElement('button');
-      const btnRight = document.createElement('button');
-      btnLeft.appendChild(document.createTextNode('Left'));
-      btnRight.appendChild(document.createTextNode('Right'));
-      btnLeft.classList.add("button-left");
-      btnRight.classList.add("button-right");
-      const box = document.querySelector(".siema");
-      box.appendChild(btnLeft);
-      box.appendChild(btnRight);
-      btnLeft.addEventListener('click', () => mySiema.prev());
-      btnRight.addEventListener('click', () => mySiema.next());
+      function createButtons() {
+        const btnLeft = document.createElement('button');
+        const btnRight = document.createElement('button');
+        btnLeft.appendChild(document.createTextNode('Left'));
+        btnRight.appendChild(document.createTextNode('Right'));
+        btnLeft.classList.add("opinion__button", "opinion__button--left");
+        btnRight.classList.add("opinion__button", "opinion__button--right");
+        const box = document.querySelector(".siema");
+        box.appendChild(btnLeft);
+        box.appendChild(btnRight);
+        btnLeft.addEventListener('click', () => mySiema.prev());
+        btnRight.addEventListener('click', () => mySiema.next());
+      }
       
       function printSlideIndex() {
       const slideIndex = document.createElement('p');      
