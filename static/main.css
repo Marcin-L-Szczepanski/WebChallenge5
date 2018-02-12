@@ -984,9 +984,13 @@ a {
     top: calc(50% - 30px);
     height: 60px;
     width: 60px;
-    border: none;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
     border-radius: 50%;
     cursor: pointer; }
+    .opinion__button:hover {
+      background-color: #dddddd;
+      border: 2px solid #bbbbbb; }
     .opinion__button--left {
       left: 0; }
     .opinion__button--right {
