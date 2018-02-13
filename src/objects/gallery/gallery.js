@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; 
 
 const categories = document.querySelectorAll(".gallery__category");
 const postcards = document.querySelectorAll(".postcard");
