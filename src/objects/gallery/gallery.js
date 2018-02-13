@@ -1,4 +1,44 @@
 let link = document.querySelectorAll(".gallery__category");
+link.forEach(function (element) {
+  element.addEventListener("click", function() {
+    for(let i = 0; i < link.length; i++) {
+      link[i].classList.add("gallery__category--inactive");
+    }
+    element.classList.remove("gallery__category--inactive");
+
+    let postcards = document.querySelectorAll(".postcard");
+    if(element.id == "categoryPrint") {
+      postcards.forEach(function(postcard) {
+        if(postcard.classList.contains("web")) {
+          postcard.style.display = "none";
+        }
+        else {
+          postcard.style.display = "block";
+        }
+      })
+    }
+    else if(element.id == "categoryWeb") {
+      postcards.forEach(function(postcard) {
+          if(postcard.classList.contains("print")) {
+            postcard.style.display = "none";
+          }
+          else {
+            postcard.style.display = "block";
+          }
+      })
+
+    }
+    else {
+      postcards.forEach(function(postcard) { 
+        postcard.style.display = "block";
+      });
+    }
+  }, false);
+});
+
+
+/*
+let link = document.querySelectorAll(".gallery__category");
   link.forEach(function (element, index, array) {
     element.addEventListener("click", function() {
       for(let i = 0; i < link.length; i++) {
@@ -35,3 +75,4 @@ let link = document.querySelectorAll(".gallery__category");
     }, false);
   });
 
+*/
