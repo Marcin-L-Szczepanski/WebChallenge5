@@ -9,24 +9,13 @@ link.forEach(function (element) {
     let postcards = document.querySelectorAll(".postcard");
     if(element.id == "categoryPrint") {
       postcards.forEach(function(postcard) {
-        if(postcard.classList.contains("web")) {
-          postcard.style.display = "none";
-        }
-        else {
-          postcard.style.display = "block";
-        }
+        postcard.classList.contains("web") ? postcard.style.display = "none" : postcard.style.display = "block";
       })
     }
     else if(element.id == "categoryWeb") {
       postcards.forEach(function(postcard) {
-          if(postcard.classList.contains("print")) {
-            postcard.style.display = "none";
-          }
-          else {
-            postcard.style.display = "block";
-          }
+          postcard.classList.contains("print") ? postcard.style.display = "none" : postcard.style.display = "block";
       })
-
     }
     else {
       postcards.forEach(function(postcard) { 
