@@ -1,25 +1,25 @@
 "use strict";
 
-let categories = document.querySelectorAll(".gallery__category");
+const categories = document.querySelectorAll(".gallery__category");
+const postcards = document.querySelectorAll(".postcard");
+
 categories.forEach(function (category) {
   category.addEventListener("click", function () {
     categories.forEach(link => link.classList.add("gallery__category--inactive"));
     this.classList.remove("gallery__category--inactive");
 
-    let postcards = document.querySelectorAll(".postcard");
-    switch(category.id) {
+    switch (category.id) {
       case "categoryPrint":
         postcards.forEach(postcard => postcard.classList.contains("print") ? postcard.style.display = "block" : postcard.style.display = "none");
         break;
       case "categoryWeb":
         postcards.forEach(postcard => postcard.classList.contains("web") ? postcard.style.display = "block" : postcard.style.display = "none");
         break;
-      default: 
-        postcards.forEach(postcard => postcard.style.display = "block");         
+      default:
+        postcards.forEach(postcard => postcard.style.display = "block");
     }
   }, false);
 });
-
 
 
 
