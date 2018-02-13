@@ -984,6 +984,9 @@ a {
     top: calc(50% - 30px);
     height: 60px;
     width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border: 2px solid #dddddd;
     border-radius: 50%;
