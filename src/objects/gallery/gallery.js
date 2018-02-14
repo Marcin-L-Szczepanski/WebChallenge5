@@ -1,5 +1,3 @@
-"use strict";
-
 var categories = document.querySelectorAll(".gallery__category");
 var postcards = document.querySelectorAll(".postcard");
 
