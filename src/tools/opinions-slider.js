@@ -1,3 +1,5 @@
+"use strict";
+
 const mySiema = new Siema({
   loop: true,
   onInit: createSliderControlers,
@@ -20,8 +22,14 @@ function createButtons() {
   const box = document.querySelector(".siema");
   box.appendChild(btnLeft);
   box.appendChild(btnRight);
-  btnLeft.addEventListener('click', () => mySiema.prev());
-  btnRight.addEventListener('click', () => mySiema.next());
+  btnLeft.addEventListener('click', function () {
+    return mySiema.prev();
+  });
+  btnRight.addEventListener('click', function () {
+    return mySiema.next();
+  });
+//  btnLeft.addEventListener('click', () => mySiema.prev());
+//  btnRight.addEventListener('click', () => mySiema.next());
 }
 
 function createIndex() {
