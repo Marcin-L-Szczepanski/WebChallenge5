@@ -1,3 +1,35 @@
+"use strict";
+
+var categories = document.querySelectorAll(".gallery__category");
+var postcards = document.querySelectorAll(".postcard");
+
+categories.forEach(function (category) {
+  category.addEventListener("click", function () {
+    categories.forEach(function (link) {
+      return link.classList.add("gallery__category--inactive");
+    });
+    this.classList.remove("gallery__category--inactive");
+
+    switch (category.id) {
+      case "categoryPrint":
+        postcards.forEach(function (postcard) {
+          return postcard.classList.contains("print") ? postcard.style.display = "block" : postcard.style.display = "none";
+        });
+        break;
+      case "categoryWeb":
+        postcards.forEach(function (postcard) {
+          return postcard.classList.contains("web") ? postcard.style.display = "block" : postcard.style.display = "none";
+        });
+        break;
+      default:
+        postcards.forEach(function (postcard) {
+          return postcard.style.display = "block";
+        });
+    }
+  }, false);
+});
+
+/*
 "use strict"; 
 
 const categories = document.querySelectorAll(".gallery__category");
@@ -20,6 +52,7 @@ categories.forEach(function (category) {
     }
   }, false);
 });
+*/
 
 
 
