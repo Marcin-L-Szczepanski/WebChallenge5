@@ -15,8 +15,8 @@ function createSliderControlers() {
 function createButtons() {
   const btnLeft = document.createElement('button');
   const btnRight = document.createElement('button');
-  btnLeft.innerHTML = '<svg width="40px" height="40px" viewBox="0 0 50 80" xml:space="preserve"><polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/></svg>';
-  btnRight.innerHTML = '<svg width="40px" height="40px" viewBox="0 0 30 80" xml:space="preserve"><polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/></svg>';
+  btnLeft.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 50 80" xml:space="preserve"><polyline fill="none" stroke="#000000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" points="45,65 0,38 45,15 "/></svg>';
+  btnRight.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 50 80" xml:space="preserve"><polyline fill="none" stroke="#000000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" points="0,15 45,38 0,65 "/></svg>';
   btnLeft.classList.add("opinion__button", "opinion__button--left");
   btnRight.classList.add("opinion__button", "opinion__button--right");
   const box = document.querySelector(".siema");
