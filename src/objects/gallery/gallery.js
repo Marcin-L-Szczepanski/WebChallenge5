@@ -1,5 +1,8 @@
+// https://stackoverflow.com/questions/7459704/in-javascript-what-is-the-best-way-to-convert-a-nodelist-to-an-array
 var categories = document.querySelectorAll(".gallery__category");
+categories = Array.prototype.slice.call(categories, 0);
 var postcards = document.querySelectorAll(".postcard");
+postcards = Array.prototype.slice.call(postcards, 0);
 
 categories.forEach(function (category) {
   category.addEventListener("click", function () {
