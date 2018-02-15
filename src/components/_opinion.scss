@@ -61,12 +61,22 @@
       background-color: #dddddd;
       border: 2px solid #bbbbbb;
     }
+    &:hover .opinion__button-arrow {
+      stroke: #252525;
+    }
     &--left {
       left: 0;
     }
     &--right {
       right: 0;
     }
+  }
+  &__button-arrow {
+    stroke: #bbbbbb;
+    stroke-width: 25;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round; 
   }
 }
 

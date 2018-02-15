@@ -994,10 +994,18 @@ a {
     .opinion__button:hover {
       background-color: #dddddd;
       border: 2px solid #bbbbbb; }
+    .opinion__button:hover .opinion__button-arrow {
+      stroke: #252525; }
     .opinion__button--left {
       left: 0; }
     .opinion__button--right {
       right: 0; }
+  .opinion__button-arrow {
+    stroke: #bbbbbb;
+    stroke-width: 25;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
 
 .details {
   width: 100%;
