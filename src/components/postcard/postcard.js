@@ -4,8 +4,10 @@ const postcard = document.querySelectorAll(".postcard__icon");
 const galleryBody = document.getElementById("galleryBody");
 
 document.addEventListener("click", function(e) {
-  if (e.target.classList.contains("postcard__icon")) {
-    openModal(e);
+  if (window.innerWidth > 650) {
+    if (e.target.classList.contains("postcard__icon")) {
+      openModal(e);
+    }
   }
 }, false);
 
