@@ -3,13 +3,13 @@
 const mySiema = new Siema({
   loop: true,
   onInit: createSliderControlers,
-  onChange: printSlideIndex,
+  //onChange: printSlideIndex,
 });
 
 function createSliderControlers() {
   createButtons();
-  createIndex();
-  printSlideIndex();
+  //createIndex();
+  //printSlideIndex();
 }
 
 function createButtons() {
@@ -32,7 +32,7 @@ function createButtons() {
 //  btnRight.addEventListener('click', () => mySiema.next());
 }
 
-function createIndex() {
+/*function createIndex() {
   const slideIndex = document.createElement('p');
   slideIndex.classList.add("js-index");
   const span = document.createElement('span');
@@ -43,4 +43,4 @@ function createIndex() {
 
 function printSlideIndex() {
   document.querySelector('.js-index').innerHTML = this.currentSlide
-}
+}*/
