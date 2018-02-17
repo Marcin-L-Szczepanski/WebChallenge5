@@ -1,6 +1,7 @@
 .section {
   &--navbar {
     background-color: $color-navbar;
+    z-index: 1;
   }
   &--dark {
     background-color: $color-bg-dark;
@@ -35,9 +36,14 @@
 // Large screen  >  850 (@screen-large)
 @mixin section\@screen-large {
   .section {
+    &--navbar {
+      position: fixed;
+      width: 100%;
+      height: 120px;
+    }
     &--intro {
       background-position: 75px center;
-      background-size: 700px; 
+      background-size: 700px;
     }
   }
 }
