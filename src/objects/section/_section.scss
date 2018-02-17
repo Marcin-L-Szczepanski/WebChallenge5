@@ -1,7 +1,13 @@
 .section {
+  &__anchor {
+    display: block;
+    position: absolute;
+    height: 120px;
+    margin-top: -119px;
+  }
   &--navbar {
     background-color: $color-navbar;
-    z-index: 1;
+    z-index: 2;
   }
   &--dark {
     background-color: $color-bg-dark;
