@@ -54,6 +54,7 @@
   }
   &__icon {
     cursor: pointer;
+    display: none;
   }
   &__modal {
     position: fixed;
@@ -88,8 +89,11 @@
   @mixin postcard\@screen-small {
     .postcard {
       width: calc(50% - 1rem);
+    &__icon {
+      display: block;
     }
   }
+}
   // Wide screen  >  1024px (@screen-wide)
   @mixin postcard\@screen-wide {
     .postcard {

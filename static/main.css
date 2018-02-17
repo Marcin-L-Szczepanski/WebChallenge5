@@ -869,7 +869,8 @@ a {
     width: 80%;
     font-size: 14px; }
   .postcard__icon {
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
   .postcard__modal {
     position: fixed;
     top: 0;
@@ -1203,6 +1204,8 @@ a {
 
   .postcard {
     width: calc(50% - 1rem); }
+    .postcard__icon {
+      display: block; }
 
   .form__inline {
     -webkit-flex-direction: row;
