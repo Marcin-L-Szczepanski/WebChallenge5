@@ -1216,6 +1216,9 @@ a {
     margin-right: 20px; }
   .form__button {
     max-width: 145px; } }
+@media only screen and (orientation: landscape) and (max-width: 740px) {
+  .postcard__icon {
+    display: none; } }
 @media only screen and (min-width: 730px) {
   .wrapper--high {
     padding-top: 150px;
