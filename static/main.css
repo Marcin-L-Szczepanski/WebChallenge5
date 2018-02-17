@@ -412,10 +412,7 @@ a {
 .section--dark {
   background-color: #161828; }
 .section--intro {
-  background-image: url("../img/bg_img_slider.png");
-  background-repeat: no-repeat;
-  background-position: 250px center;
-  background-size: 850px; }
+  transition: all 300ms linear; }
 .section--light {
   background-color: #475a85; }
 .section--white {
@@ -1152,6 +1149,12 @@ a {
     font-size: 21px;
     margin-bottom: 50px; } }
 @media only screen and (min-width: 650px) {
+  .section--intro {
+    background-image: url("../img/bg_img_slider.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px; }
+
   .card-wrapper {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
@@ -1252,6 +1255,10 @@ a {
     .opinion__text {
       width: 100%; } }
 @media only screen and (min-width: 850px) {
+  .section--intro {
+    background-position: 75px center;
+    background-size: 700px; }
+
   .menu__button {
     display: none; }
   .menu__list {
@@ -1285,6 +1292,10 @@ a {
   .footer {
     padding-bottom: 30px; } }
 @media only screen and (min-width: 1024px) {
+  .section--intro {
+    background-position: 100px center;
+    background-size: 800px; }
+
   .card {
     margin-left: 0;
     margin-right: 0; }
@@ -1305,5 +1316,9 @@ a {
     -ms-flex-pack: space-between; }
     .contact__form {
       margin-top: 0; } }
+@media only screen and (min-width: 1200px) {
+  .section--intro {
+    background-position: 250px center;
+    background-size: 850px; } }
 
 /*# sourceMappingURL=main.css.map */

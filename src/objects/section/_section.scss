@@ -6,10 +6,7 @@
     background-color: $color-bg-dark;
   }
   &--intro {
-    background-image: url("../img/bg_img_slider.png");
-    background-repeat: no-repeat;
-    background-position: 250px center;
-    background-size: 850px;
+    transition: all 300ms linear;
   }
   &--light {
     background-color: $color-bg-light;
@@ -20,5 +17,47 @@
   }
   &--footer {
     background-color: $color-bg-dark;
+  }
+}
+
+// Small screen < 650 px (@screen-small)
+@mixin section\@screen-small {
+  .section {
+    &--intro {
+      background-image: url("../img/bg_img_slider.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 600px; 
+    }
+  }
+}
+
+// Large screen  >  850 (@screen-large)
+@mixin section\@screen-large {
+  .section {
+    &--intro {
+      background-position: 75px center;
+      background-size: 700px; 
+    }
+  }
+}
+
+// Wide screen  >  1024px (@screen-wide)
+@mixin section\@screen-wide {
+  .section {
+    &--intro {
+      background-position: 100px center;
+      background-size: 800px; 
+    }
+  }
+}
+
+// Mega screen > 1200px (@screen-mega)
+@mixin section\@screen-mega {
+  .section {
+    &--intro {
+      background-position: 250px center;
+      background-size: 850px; 
+    }
   }
 }
