@@ -411,6 +411,11 @@ a {
   background-color: #0d0b11; }
 .section--dark {
   background-color: #161828; }
+.section--intro {
+  background-image: url("../img/bg_img_slider.png");
+  background-repeat: no-repeat;
+  background-position: 250px center;
+  background-size: 850px; }
 .section--light {
   background-color: #475a85; }
 .section--white {

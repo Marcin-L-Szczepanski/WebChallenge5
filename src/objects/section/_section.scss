@@ -5,6 +5,12 @@
   &--dark {
     background-color: $color-bg-dark;
   }
+  &--intro {
+    background-image: url("../img/bg_img_slider.png");
+    background-repeat: no-repeat;
+    background-position: 250px center;
+    background-size: 850px;
+  }
   &--light {
     background-color: $color-bg-light;
   }
