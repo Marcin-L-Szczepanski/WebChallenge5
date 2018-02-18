@@ -1,10 +1,4 @@
 .section {
-  &__anchor {
-    display: block;
-    position: absolute;
-    height: 120px;
-    margin-top: -119px;
-  }
   &--navbar {
     background-color: $color-navbar;
     z-index: 2;
@@ -42,6 +36,12 @@
 // Large screen  >  850 (@screen-large)
 @mixin section\@screen-large {
   .section {
+    &__anchor {
+      display: block;
+      position: absolute;
+      height: 120px;
+      margin-top: -119px;
+    }
     &--navbar {
       position: fixed;
       width: 100%;

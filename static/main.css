@@ -407,11 +407,6 @@ a {
   color: inherit;
   text-decoration: none; }
 
-.section__anchor {
-  display: block;
-  position: absolute;
-  height: 120px;
-  margin-top: -119px; }
 .section--navbar {
   background-color: #0d0b11;
   z-index: 2; }
@@ -1264,6 +1259,11 @@ a {
   main {
     padding-top: 120px; }
 
+  .section__anchor {
+    display: block;
+    position: absolute;
+    height: 120px;
+    margin-top: -119px; }
   .section--navbar {
     position: fixed;
     width: 100%;
