@@ -518,6 +518,8 @@ a {
   .gallery__body {
     max-width: 1200px; }
   .gallery__footer {
+    width: 100px;
+    margin: 0 auto;
     font-size: 18px;
     color: #323232;
     font-weight: 700;

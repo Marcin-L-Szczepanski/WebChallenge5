@@ -12,6 +12,8 @@
     max-width: 1200px;
   }
   &__footer {
+    width: 100px;
+    margin: 0 auto;
     font-size: $font-size-small;
     color: $color-text-dark;
     font-weight: $bold;
