@@ -1,16 +1,23 @@
 "use strict";
 
+
 const mySiema = new Siema({
   loop: true,
-  onInit: createSliderControlers,
-  //onChange: printSlideIndex,
+  startIndex: 0,
+  onInit: function onInit() {
+    // console.log('Just initialized carousel 🥑');
+    return createButtons();
+  },
+ // onChange: printSlideIndex,
 });
 
+/*
 function createSliderControlers() {
   createButtons();
-  //createIndex();
-  //printSlideIndex();
+  createIndex();
+  printSlideIndex();
 }
+*/
 
 function createButtons() {
   const btnLeft = document.createElement('button');
@@ -31,16 +38,19 @@ function createButtons() {
 //  btnLeft.addEventListener('click', () => mySiema.prev());
 //  btnRight.addEventListener('click', () => mySiema.next());
 }
+/*
 
-/*function createIndex() {
+function createIndex() {
   const slideIndex = document.createElement('p');
   slideIndex.classList.add("js-index");
   const span = document.createElement('span');
   const box = document.querySelector(".siema");
   box.appendChild(slideIndex);
-  document.querySelector('.js-index').innerHTML = this.currentSlide
+  //document.querySelector('.js-index').innerHTML = this.currentSlide;
 }
 
-function printSlideIndex() {
-  document.querySelector('.js-index').innerHTML = this.currentSlide
-}*/
+let printSlideIndex = function () {
+  document.querySelector('.js-index').innerHTML = this.currentSlide;
+};
+
+*/
