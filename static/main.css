@@ -605,11 +605,23 @@ a {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round; }
+.slider__dots {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
 .slider__dot {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #7b7b7b; }
+  background-color: #7b7b7b;
+  margin: 30px 5px 30px 5px; }
   .slider__dot--active {
     background-color: #323232; }
 
