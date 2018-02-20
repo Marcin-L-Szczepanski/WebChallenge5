@@ -7,7 +7,20 @@ const mySiema = new Siema({
 });
 
 function printSlideIndex() {
-  document.querySelector('.js-index').innerHTML = this.currentSlide;
+  let currentSlide = this.currentSlide;
+  document.querySelector('.js-index').innerHTML = currentSlide;
+  console.log(currentSlide);
+  let bla = document.querySelectorAll(".slider__dot");
+  for (let i = 0; i < bla.length; i++) {
+    bla[i].classList.remove("slider__dot--active");
+  }
+  let sth = document.getElementById("slide"+currentSlide);
+  console.log(sth);
+  sth.classList.add("slider__dot--active");
+  
+  return currentSlide;
+
+ // document.getElementById("slide"+currentSlide).classList.add("slider__dot--active");
 }
 
 let boundIndex = printSlideIndex.bind(mySiema);
@@ -15,6 +28,8 @@ let boundIndex = printSlideIndex.bind(mySiema);
 createButtons();
 createIndex();
 
+
+/*
 function createIndex() {
   const slideIndex = document.createElement('p');
   slideIndex.classList.add("js-index");
@@ -23,6 +38,31 @@ function createIndex() {
   box.appendChild(slideIndex);
   boundIndex();
 }
+*/
+
+
+function createIndex(printSlideIndex) {
+  const slideIndex = document.createElement('p');
+  slideIndex.classList.add("js-index");
+  const span = document.createElement('span');
+  const box = document.querySelector(".siema");
+  box.appendChild(slideIndex);
+
+  const indexDots = document.createElement('div');
+  indexDots.classList.add("slider__dots");
+  let i = 0;
+  mySiema.innerElements.forEach(function() {
+    const indexDot = document.createElement('div');
+    indexDot.classList.add("slider__dot");
+    indexDot.setAttribute("id", "slide"+i);
+    indexDots.appendChild(indexDot);
+    i++;
+  });
+  //boundIndex();
+  const opinionsWrapper = document.querySelector(".opinions-wrapper");
+  opinionsWrapper.appendChild(indexDots);
+}
+
 
 function createButtons() {
   const btnLeft = document.createElement('button');
@@ -41,3 +81,4 @@ function createButtons() {
     return mySiema.next();
   });
 }
+

@@ -25,5 +25,12 @@
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round; }
+.slider__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7b7b7b; }
+  .slider__dot--active {
+    background-color: #323232; }
 
 /*# sourceMappingURL=slider.css.map */
