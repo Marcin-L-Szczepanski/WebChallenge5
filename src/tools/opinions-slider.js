@@ -27,10 +27,10 @@ function createIndex() {
 function createButtons() {
   const btnLeft = document.createElement('button');
   const btnRight = document.createElement('button');
-  btnLeft.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 60 80" xml:space="preserve"><polyline class="opinion__button-arrow" points="45,65 5,38 45,15 "/></svg>';
-  btnRight.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 40 80" xml:space="preserve"><polyline class="opinion__button-arrow" points="0,15 45,38 0,65 "/></svg>';
-  btnLeft.classList.add("opinion__button", "opinion__button--left");
-  btnRight.classList.add("opinion__button", "opinion__button--right");
+  btnLeft.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 60 80" xml:space="preserve"><polyline class="slider__button-arrow" points="45,65 5,38 45,15 "/></svg>';
+  btnRight.innerHTML = '<svg width="30px" height="30px" viewBox="0 0 40 80" xml:space="preserve"><polyline class="slider__button-arrow" points="0,15 45,38 0,65 "/></svg>';
+  btnLeft.classList.add("slider__button", "slider__button--left");
+  btnRight.classList.add("slider__button", "slider__button--right");
   const box = document.querySelector(".siema");
   box.appendChild(btnLeft);
   box.appendChild(btnRight);
