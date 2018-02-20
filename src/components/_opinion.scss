@@ -45,39 +45,6 @@
     font-size: $font-size-opinion-author;
     font-weight: $bold;
   }
-  &__button {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-      background-color: #dddddd;
-      border: 2px solid #bbbbbb;
-    }
-    &:hover .opinion__button-arrow {
-      stroke: #252525;
-    }
-    &--left {
-      left: 0;
-    }
-    &--right {
-      right: 0;
-    }
-  }
-  &__button-arrow {
-    stroke: #bbbbbb;
-    stroke-width: 25;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round; 
-  }
 }
 
 // Media queries 
