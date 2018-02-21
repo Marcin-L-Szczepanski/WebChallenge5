@@ -6,34 +6,8 @@ const mySiema = new Siema({
   onChange: printSlideIndex
 });
 
-function printSlideIndex() {
-  const sliderIndexDot = document.querySelectorAll(".slider__dot");
-  for (let i = 0; i < sliderIndexDot.length; i++) {
-    sliderIndexDot[i].classList.remove("slider__dot--active");
-  }
-  const currentSlideDot = document.getElementById("slide"+this.currentSlide);
-  currentSlideDot.classList.add("slider__dot--active");
-}
-
 createButtons();
 createIndex();
-
-function createIndex() {
-  const sliderIndexDots = document.createElement('div');
-  sliderIndexDots.classList.add("slider__dots");
-  for (let i = 0; i < mySiema.innerElements.length; i++) {
-    const sliderIndexDot = document.createElement('div');
-    sliderIndexDot.classList.add("slider__dot");
-    if (i === 0) sliderIndexDot.classList.add("slider__dot--active");
-    sliderIndexDot.setAttribute("id", "slide"+i);
-    sliderIndexDot.addEventListener('click', function () {
-      mySiema.goTo(i);
-    });
-    sliderIndexDots.appendChild(sliderIndexDot);
-  };
-  const opinionsWrapper = document.querySelector(".opinions-wrapper");
-  opinionsWrapper.appendChild(sliderIndexDots);
-}
 
 
 function createButtons() {
@@ -52,4 +26,30 @@ function createButtons() {
   btnRight.addEventListener('click', function () {
     mySiema.next();
   });
+}
+
+function createIndex() {
+  const sliderIndexDots = document.createElement('div');
+  sliderIndexDots.classList.add("slider__dots");
+  for (let i = 0; i < mySiema.innerElements.length; i++) {
+    const sliderIndexDot = document.createElement('div');
+    sliderIndexDot.classList.add("slider__dot");
+    if (i === 0) sliderIndexDot.classList.add("slider__dot--active");
+    sliderIndexDot.setAttribute("id", "slide" + i);
+    sliderIndexDot.addEventListener('click', function () {
+      mySiema.goTo(i);
+    });
+    sliderIndexDots.appendChild(sliderIndexDot);
+  };
+  const opinionsWrapper = document.querySelector(".opinions-wrapper");
+  opinionsWrapper.appendChild(sliderIndexDots);
+}
+
+function printSlideIndex() {
+  const sliderIndexDot = document.querySelectorAll(".slider__dot");
+  for (let i = 0; i < sliderIndexDot.length; i++) {
+    sliderIndexDot[i].classList.remove("slider__dot--active");
+  }
+  const currentSlideDot = document.getElementById("slide" + this.currentSlide);
+  currentSlideDot.classList.add("slider__dot--active");
 }
