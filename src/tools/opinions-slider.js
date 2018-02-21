@@ -7,37 +7,32 @@ const mySiema = new Siema({
 });
 
 function printSlideIndex() {
-  let sliderIndexDot = document.querySelectorAll(".slider__dot");
+  const sliderIndexDot = document.querySelectorAll(".slider__dot");
   for (let i = 0; i < sliderIndexDot.length; i++) {
     sliderIndexDot[i].classList.remove("slider__dot--active");
   }
-  let currentSlideDot = document.getElementById("slide"+this.currentSlide);
+  const currentSlideDot = document.getElementById("slide"+this.currentSlide);
   currentSlideDot.classList.add("slider__dot--active");
 }
-
-//let boundIndex = printSlideIndex.bind(mySiema);
 
 createButtons();
 createIndex();
 
-
-function createIndex(printSlideIndex) {
-  const indexDots = document.createElement('div');
-  indexDots.classList.add("slider__dots");
+function createIndex() {
+  const sliderIndexDots = document.createElement('div');
+  sliderIndexDots.classList.add("slider__dots");
   for (let i = 0; i < mySiema.innerElements.length; i++) {
-    const indexDot = document.createElement('div');
-    indexDot.classList.add("slider__dot");
-    indexDot.setAttribute("id", "slide"+i);
-    indexDot.addEventListener('click', function () {
-      console.log(i);
+    const sliderIndexDot = document.createElement('div');
+    sliderIndexDot.classList.add("slider__dot");
+    sliderIndexDot.setAttribute("id", "slide"+i);
+    sliderIndexDot.addEventListener('click', function () {
       return mySiema.goTo(i);
     });
-    indexDots.appendChild(indexDot);
-    if (i === 0) indexDot.classList.add("slider__dot--active");
+    sliderIndexDots.appendChild(sliderIndexDot);
+    if (i === 0) sliderIndexDot.classList.add("slider__dot--active");
   };
-  //boundIndex();
   const opinionsWrapper = document.querySelector(".opinions-wrapper");
-  opinionsWrapper.appendChild(indexDots);
+  opinionsWrapper.appendChild(sliderIndexDots);
 }
 
 
