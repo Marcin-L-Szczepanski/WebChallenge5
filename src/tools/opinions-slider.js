@@ -56,6 +56,7 @@ function createIndex(printSlideIndex) {
     indexDot.classList.add("slider__dot");
     indexDot.setAttribute("id", "slide"+i);
     indexDots.appendChild(indexDot);
+    if (i === 0) indexDot.classList.add("slider__dot--active");
     i++;
   });
   //boundIndex();
