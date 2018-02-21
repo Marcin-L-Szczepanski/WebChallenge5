@@ -7,47 +7,21 @@ const mySiema = new Siema({
 });
 
 function printSlideIndex() {
-  let currentSlide = this.currentSlide;
-  document.querySelector('.js-index').innerHTML = currentSlide;
-  //console.log(currentSlide);
-  let bla = document.querySelectorAll(".slider__dot");
-  for (let i = 0; i < bla.length; i++) {
-    bla[i].classList.remove("slider__dot--active");
+  let sliderIndexDot = document.querySelectorAll(".slider__dot");
+  for (let i = 0; i < sliderIndexDot.length; i++) {
+    sliderIndexDot[i].classList.remove("slider__dot--active");
   }
-  let sth = document.getElementById("slide"+currentSlide);
-  //console.log(sth);
-  sth.classList.add("slider__dot--active");
-  
-  return currentSlide;
-
- // document.getElementById("slide"+currentSlide).classList.add("slider__dot--active");
+  let currentSlideDot = document.getElementById("slide"+this.currentSlide);
+  currentSlideDot.classList.add("slider__dot--active");
 }
 
-let boundIndex = printSlideIndex.bind(mySiema);
+//let boundIndex = printSlideIndex.bind(mySiema);
 
 createButtons();
 createIndex();
 
 
-/*
-function createIndex() {
-  const slideIndex = document.createElement('p');
-  slideIndex.classList.add("js-index");
-  const span = document.createElement('span');
-  const box = document.querySelector(".siema");
-  box.appendChild(slideIndex);
-  boundIndex();
-}
-*/
-
-
 function createIndex(printSlideIndex) {
-  const slideIndex = document.createElement('p');
-  slideIndex.classList.add("js-index");
-  const span = document.createElement('span');
-  const box = document.querySelector(".siema");
-  box.appendChild(slideIndex);
-
   const indexDots = document.createElement('div');
   indexDots.classList.add("slider__dots");
   for (let i = 0; i < mySiema.innerElements.length; i++) {
