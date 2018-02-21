@@ -24,12 +24,12 @@ function createIndex() {
   for (let i = 0; i < mySiema.innerElements.length; i++) {
     const sliderIndexDot = document.createElement('div');
     sliderIndexDot.classList.add("slider__dot");
+    if (i === 0) sliderIndexDot.classList.add("slider__dot--active");
     sliderIndexDot.setAttribute("id", "slide"+i);
     sliderIndexDot.addEventListener('click', function () {
-      return mySiema.goTo(i);
+      mySiema.goTo(i);
     });
     sliderIndexDots.appendChild(sliderIndexDot);
-    if (i === 0) sliderIndexDot.classList.add("slider__dot--active");
   };
   const opinionsWrapper = document.querySelector(".opinions-wrapper");
   opinionsWrapper.appendChild(sliderIndexDots);
@@ -47,10 +47,9 @@ function createButtons() {
   box.appendChild(btnLeft);
   box.appendChild(btnRight);
   btnLeft.addEventListener('click', function () {
-    return mySiema.prev();
+    mySiema.prev();
   });
   btnRight.addEventListener('click', function () {
-    return mySiema.next();
+    mySiema.next();
   });
 }
-
