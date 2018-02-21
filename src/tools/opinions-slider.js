@@ -9,13 +9,13 @@ const mySiema = new Siema({
 function printSlideIndex() {
   let currentSlide = this.currentSlide;
   document.querySelector('.js-index').innerHTML = currentSlide;
-  console.log(currentSlide);
+  //console.log(currentSlide);
   let bla = document.querySelectorAll(".slider__dot");
   for (let i = 0; i < bla.length; i++) {
     bla[i].classList.remove("slider__dot--active");
   }
   let sth = document.getElementById("slide"+currentSlide);
-  console.log(sth);
+  //console.log(sth);
   sth.classList.add("slider__dot--active");
   
   return currentSlide;
@@ -50,15 +50,17 @@ function createIndex(printSlideIndex) {
 
   const indexDots = document.createElement('div');
   indexDots.classList.add("slider__dots");
-  let i = 0;
-  mySiema.innerElements.forEach(function() {
+  for (let i = 0; i < mySiema.innerElements.length; i++) {
     const indexDot = document.createElement('div');
     indexDot.classList.add("slider__dot");
     indexDot.setAttribute("id", "slide"+i);
+    indexDot.addEventListener('click', function () {
+      console.log(i);
+      return mySiema.goTo(i);
+    });
     indexDots.appendChild(indexDot);
     if (i === 0) indexDot.classList.add("slider__dot--active");
-    i++;
-  });
+  };
   //boundIndex();
   const opinionsWrapper = document.querySelector(".opinions-wrapper");
   opinionsWrapper.appendChild(indexDots);
