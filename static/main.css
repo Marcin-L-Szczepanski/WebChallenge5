@@ -579,26 +579,7 @@ a {
   align-items: stretch; }
 
 .slider__button {
-  position: absolute;
-  top: calc(50% - 30px);
-  height: 60px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border: 2px solid #dddddd;
-  border-radius: 50%;
-  cursor: pointer; }
-  .slider__button:hover {
-    background-color: #dddddd;
-    border: 2px solid #bbbbbb; }
-  .slider__button:hover .slider__button-arrow {
-    stroke: #252525; }
-  .slider__button--left {
-    left: 0; }
-  .slider__button--right {
-    right: 0; }
+  display: none; }
 .slider__button-arrow {
   stroke: #bbbbbb;
   stroke-width: 25;
@@ -1375,6 +1356,28 @@ a {
 
   .postcard {
     width: calc((100% / 3) - 1rem); }
+
+  .slider__button {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    cursor: pointer; }
+    .slider__button:hover {
+      background-color: #dddddd;
+      border: 2px solid #bbbbbb; }
+    .slider__button:hover .slider__button-arrow {
+      stroke: #252525; }
+    .slider__button--left {
+      left: 0; }
+    .slider__button--right {
+      right: 0; }
 
   .contact {
     width: 100%;

@@ -1,29 +1,6 @@
 .slider {
   &__button {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-      background-color: #dddddd;
-      border: 2px solid #bbbbbb;
-    }
-    &:hover .slider__button-arrow {
-      stroke: #252525;
-    }
-    &--left {
-      left: 0;
-    }
-    &--right {
-      right: 0;
-    }
+    display: none;
   }
   &__button-arrow {
     stroke: #bbbbbb;
@@ -45,6 +22,39 @@
     cursor: pointer;
     &--active {
       background-color: #323232;
+    }
+  }
+}
+
+
+// Wide screen (@screen-wide)
+@mixin slider\@screen-wide {
+  .slider {
+    &__button {
+      position: absolute;
+      top: calc(50% - 30px);
+      height: 60px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border: 2px solid #dddddd;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        background-color: #dddddd;
+        border: 2px solid #bbbbbb;
+      }
+      &:hover .slider__button-arrow {
+        stroke: #252525;
+      }
+      &--left {
+        left: 0;
+      }
+      &--right {
+        right: 0;
+      }
     }
   }
 }
