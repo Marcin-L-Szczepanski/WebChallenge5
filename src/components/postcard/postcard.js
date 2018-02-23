@@ -38,7 +38,9 @@ function openModal(e) {
   postcardModalPicture.src = e.target.parentElement.parentElement.firstElementChild.src;
   let currentPostcard = e.target.parentElement.parentElement;
   
+  postcardModalPreviousButton.addEventListener("click", closeModal);
   postcardModalCloseButton.addEventListener("click", closeModal);
+  postcardModalNextButton.addEventListener("click", closeModal);
   
   document.addEventListener("keydown", function(e) {
     switch (e.keyCode) {

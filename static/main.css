@@ -963,6 +963,7 @@ a {
   .postcard__modal-button {
     width: 50px;
     height: 50px;
+    margin: 10px 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
