@@ -16,18 +16,19 @@ document.addEventListener("click", function(e) {
 function openModal(e) {
   const postcardModal = document.createElement("div");
   const postcardModalPicture = document.createElement("img");
-  const postcardModalButton = document.createElement("button");
+  const postcardModalCloseButton = document.createElement("button");
   postcardModal.classList.add("postcard__modal");
   postcardModalPicture.classList.add("postcard__modal-picture");
-  postcardModalButton.classList.add("postcard__modal-button");
-  postcardModalButton.innerHTML = '<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1"><g stroke="#dfdfdf"  stroke-width="10" ><line x1="10" x2="40" y1="10" y2="40" /> <line x1="10" x2="40" y1="40" y2="10" /></g></svg>';
+  postcardModalCloseButton.classList.add("postcard__modal-button");
+  postcardModalCloseButton.innerHTML = '<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1"><g stroke="#dfdfdf"  stroke-width="10" ><line x1="10" x2="40" y1="10" y2="40" /> <line x1="10" x2="40" y1="40" y2="10" /></g></svg>';
   galleryBody.appendChild(postcardModal);
   postcardModal.appendChild(postcardModalPicture);
-  postcardModal.appendChild(postcardModalButton);
+  postcardModal.appendChild(postcardModalCloseButton);
   postcardModalPicture.src = e.target.parentElement.parentElement.firstElementChild.src;
   let currentPostcard = e.target.parentElement.parentElement;
   
-  postcardModalButton.addEventListener("click", closeModal);
+  postcardModalCloseButton.addEventListener("click", closeModal);
+  
   document.addEventListener("keydown", function(e) {
     switch (e.keyCode) {
       case 27: 
