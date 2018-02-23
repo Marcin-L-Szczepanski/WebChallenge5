@@ -2,6 +2,8 @@
 
 const postcard = document.querySelectorAll(".postcard__icon");
 const galleryBody = document.getElementById("galleryBody");
+const numberOfPictures = galleryBody.childElementCount;
+console.log(numberOfPictures);
 
 document.addEventListener("click", function(e) {
   if (window.innerWidth > 650) {
@@ -24,22 +26,31 @@ function openModal(e) {
   postcardModal.appendChild(postcardModalButton);
   postcardModalPicture.src = e.target.parentElement.parentElement.firstElementChild.src;
   let currentPostcard = e.target.parentElement.parentElement;
- // return currentPostcard;
-//  let previousPicture = e.target.parentElement.parentElement.previousElementSibling.firstElementChild.src;
-//  let nextPicture = e.target.parentElement.parentElement.nextElementSibling.firstElementChild.src;
   
   postcardModalButton.addEventListener("click", closeModal);
   document.addEventListener("keydown", function(e) {
-    if (e.keyCode == 27) {
-      closeModal();
-    }
-    else if (e.keyCode == 37) {
-      postcardModalPicture.src = currentPostcard.previousElementSibling.firstElementChild.src;
-      currentPostcard = currentPostcard.previousElementSibling;
-    }
-    else if (e.keyCode == 39) {
-      postcardModalPicture.src = currentPostcard.nextElementSibling.firstElementChild.src;
-      currentPostcard = currentPostcard.nextElementSibling;
+    switch (e.keyCode) {
+      case 27: 
+        closeModal();
+        break;
+      case 37:
+        if (!currentPostcard.previousElementSibling) {
+          break;
+        }
+        else {
+          postcardModalPicture.src = currentPostcard.previousElementSibling.firstElementChild.src;
+          currentPostcard = currentPostcard.previousElementSibling;
+        }
+        break;
+      case 39:
+        if (!currentPostcard.nextElementSibling) {
+          break;
+        }
+        else {
+          postcardModalPicture.src = currentPostcard.nextElementSibling.firstElementChild.src;
+          currentPostcard = currentPostcard.nextElementSibling;
+        }
+        break;
     }
   }, false);
   document.addEventListener("click", function(e) {
