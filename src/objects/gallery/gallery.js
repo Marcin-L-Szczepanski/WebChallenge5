@@ -14,17 +14,17 @@ categories.forEach(function (category) {
     switch (category.id) {
       case "categoryPrint":
         postcards.forEach(function (postcard) {
-          return postcard.classList.contains("print") ? postcard.style.display = "block" : postcard.style.display = "none";
+          return postcard.classList.contains("print") ? postcard.classList.remove("postcard--hidden") : postcard.classList.add("postcard--hidden");
         });
         break;
       case "categoryWeb":
         postcards.forEach(function (postcard) {
-          return postcard.classList.contains("web") ? postcard.style.display = "block" : postcard.style.display = "none";
+          return postcard.classList.contains("web") ? postcard.classList.remove("postcard--hidden") : postcard.classList.add("postcard--hidden");
         });
         break;
       default:
         postcards.forEach(function (postcard) {
-          return postcard.style.display = "block";
+          return postcard.classList.remove("postcard--hidden");
         });
     }
   }, false);
