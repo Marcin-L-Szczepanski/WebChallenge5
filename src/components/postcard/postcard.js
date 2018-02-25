@@ -6,7 +6,7 @@ const postcardss = document.querySelectorAll(".postcard");
 console.log(postcardss);
 
 
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function (e) {
   if (window.innerWidth > 650) {
     if (e.target.classList.contains("postcard__icon")) {
       openModal(e);
@@ -38,11 +38,11 @@ function openModal(e) {
   postcardModalButtonParrent.appendChild(postcardModalNextButton);
   postcardModalPicture.src = e.target.parentElement.parentElement.firstElementChild.src;
   let currentPostcard = e.target.parentElement.parentElement;
-  
+
   postcardModalPreviousButton.addEventListener("click", closeModal);
   postcardModalCloseButton.addEventListener("click", closeModal);
   postcardModalNextButton.addEventListener("click", closeModal);
-  
+
   document.addEventListener("keydown", function (e) {
     switch (e.keyCode) {
       case 27:
@@ -66,7 +66,7 @@ function openModal(e) {
         }
         break;
       case 39:
-        if ( !currentPostcard.nextElementSibling.nextElementSibling) {
+        if (!currentPostcard.nextElementSibling.nextElementSibling) {
           break;
           //currentPostcard = currentPostcard.nextElementSibling;
         } else {
@@ -85,8 +85,8 @@ function openModal(e) {
         break;
     }
   }, false);
-  document.addEventListener("click", function(e) {
-   if (e.target.nodeName !== "IMG")  {
+  document.addEventListener("click", function (e) {
+    if (e.target.nodeName !== "IMG") {
       closeModal();
     }
   }, false);
