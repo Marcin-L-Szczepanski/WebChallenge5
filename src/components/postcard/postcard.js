@@ -43,77 +43,45 @@ function openModal(e) {
   postcardModalCloseButton.addEventListener("click", closeModal);
   postcardModalNextButton.addEventListener("click", closeModal);
   
-  document.addEventListener("keydown", function(e) {
+  document.addEventListener("keydown", function (e) {
     switch (e.keyCode) {
-      case 27: 
+      case 27:
         closeModal();
         break;
       case 37:
         if (!currentPostcard.previousElementSibling) {
           break;
-        }
-        else {
-          var previous = [];
+        } else {
+          var prevPostcards = [];
           while (currentPostcard.previousElementSibling) {
-            previous.push(currentPostcard = currentPostcard.previousElementSibling);
+            prevPostcards.push(currentPostcard = currentPostcard.previousElementSibling);
           }
-          let previousEl = previous.find(function(previous) {
-            if (previous.classList.contains("postcard--displayed")) {
+          let prevDisplayedPostcard = prevPostcards.find(function (prevPostcard) {
+            if (prevPostcard.classList.contains("postcard--displayed")) {
               return true;
             }
           });
-          postcardModalPicture.src = previousEl.firstElementChild.src;
-          currentPostcard = previousEl;
+          postcardModalPicture.src = prevDisplayedPostcard.firstElementChild.src;
+          currentPostcard = prevDisplayedPostcard;
         }
-        break;
-        
-        /*let els = document.querySelectorAll("#galleryBody .postcard--displayed");
-        console.log(els);
-        console.log(postcardModalPicture);
-        
-        /*       if (currentPostcard.previousElementSibling) {
-          console.log("Siema");
-          console.log(currentPostcard);
-          var prev = [];
-          while (currentPostcard.previousElementSibling) {
-            prev.push(currentPostcard = currentPostcard.previousElementSibling);
-          }
-          console.log(prev);
-          let webs = [];
-          for (let i = 0; i < prev.length; i++) {
-            if (!prev[i].classList.contains('postcard--hidden')) {
-            webs.push(prev[i]);
-            }
-            
-          }
-
-          postcardModalPicture.src = webs[0].firstElementChild.src;
-
-            }
-
-        currentPostcard = currentPostcard.previousElementSibling;
-
-
-*/
-
         break;
       case 39:
-        if (!currentPostcard.nextElementSibling) {
+        if ( !currentPostcard.nextElementSibling.nextElementSibling) {
           break;
-        }
-        else {
-          var next = [];
+          //currentPostcard = currentPostcard.nextElementSibling;
+        } else {
+          var nextPostcards = [];
           while (currentPostcard.nextElementSibling) {
-            next.push(currentPostcard = currentPostcard.nextElementSibling);
+            nextPostcards.push(currentPostcard = currentPostcard.nextElementSibling);
           }
-          let nextEl = next.find(function(next) {
-            if (next.classList.contains("postcard--displayed")) {
+          let nextDisplayedPostcard = nextPostcards.find(function (nextPostcard) {
+            if (nextPostcard.classList.contains("postcard--displayed")) {
               return true;
             }
           });
-          postcardModalPicture.src = nextEl.firstElementChild.src;
-          currentPostcard = nextEl;
-    }
+          postcardModalPicture.src = nextDisplayedPostcard.firstElementChild.src;
+          currentPostcard = nextDisplayedPostcard;
+        }
         break;
     }
   }, false);
