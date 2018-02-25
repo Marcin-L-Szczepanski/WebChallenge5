@@ -49,7 +49,7 @@ function openModal(e) {
         closeModal();
         break;
       case 37:
-        if (!currentPostcard.previousElementSibling) {
+        if (!currentPostcard.previousElementSibling || !currentPostcard.previousElementSibling.classList.contains("postcard--displayed")) {
           break;
         } else {
           var prevPostcards = [];
@@ -66,7 +66,7 @@ function openModal(e) {
         }
         break;
       case 39:
-        if (!currentPostcard.nextElementSibling.nextElementSibling) {
+        if (!currentPostcard.nextElementSibling || !currentPostcard.nextElementSibling.classList.contains("postcard--displayed")) {
           break;
           //currentPostcard = currentPostcard.nextElementSibling;
         } else {
