@@ -2,8 +2,9 @@
 
 const postcard = document.querySelectorAll(".postcard__icon");
 const galleryBody = document.getElementById("galleryBody");
-const numberOfPictures = galleryBody.childElementCount;
-console.log(numberOfPictures);
+const postcardss = document.querySelectorAll(".postcard");
+console.log(postcardss);
+
 
 document.addEventListener("click", function(e) {
   if (window.innerWidth > 650) {
@@ -52,18 +53,67 @@ function openModal(e) {
           break;
         }
         else {
-          postcardModalPicture.src = currentPostcard.previousElementSibling.firstElementChild.src;
-          currentPostcard = currentPostcard.previousElementSibling;
+          var previous = [];
+          while (currentPostcard.previousElementSibling) {
+            previous.push(currentPostcard = currentPostcard.previousElementSibling);
+          }
+          let previousEl = previous.find(function(previous) {
+            if (previous.classList.contains("postcard--displayed")) {
+              return true;
+            }
+          });
+          postcardModalPicture.src = previousEl.firstElementChild.src;
+          currentPostcard = previousEl;
         }
+        break;
+        
+        /*let els = document.querySelectorAll("#galleryBody .postcard--displayed");
+        console.log(els);
+        console.log(postcardModalPicture);
+        
+        /*       if (currentPostcard.previousElementSibling) {
+          console.log("Siema");
+          console.log(currentPostcard);
+          var prev = [];
+          while (currentPostcard.previousElementSibling) {
+            prev.push(currentPostcard = currentPostcard.previousElementSibling);
+          }
+          console.log(prev);
+          let webs = [];
+          for (let i = 0; i < prev.length; i++) {
+            if (!prev[i].classList.contains('postcard--hidden')) {
+            webs.push(prev[i]);
+            }
+            
+          }
+
+          postcardModalPicture.src = webs[0].firstElementChild.src;
+
+            }
+
+        currentPostcard = currentPostcard.previousElementSibling;
+
+
+*/
+
         break;
       case 39:
         if (!currentPostcard.nextElementSibling) {
           break;
         }
         else {
-          postcardModalPicture.src = currentPostcard.nextElementSibling.firstElementChild.src;
-          currentPostcard = currentPostcard.nextElementSibling;
-        }
+          var next = [];
+          while (currentPostcard.nextElementSibling) {
+            next.push(currentPostcard = currentPostcard.nextElementSibling);
+          }
+          let nextEl = next.find(function(next) {
+            if (next.classList.contains("postcard--displayed")) {
+              return true;
+            }
+          });
+          postcardModalPicture.src = nextEl.firstElementChild.src;
+          currentPostcard = nextEl;
+    }
         break;
     }
   }, false);

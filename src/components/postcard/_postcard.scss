@@ -1,4 +1,5 @@
 .postcard {
+  display: none;
   position: relative;
     @include flex(auto);
     width: 100%;
@@ -84,6 +85,9 @@
     border: none;
     cursor: pointer;
     font-size: 25px;
+  }
+  &--displayed {
+    display: block;
   }
 }
 

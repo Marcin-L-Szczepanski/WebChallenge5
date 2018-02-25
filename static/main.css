@@ -869,6 +869,7 @@ a {
     transition: transform 150ms linear; }
 
 .postcard {
+  display: none;
   position: relative;
   -webkit-box-flex: auto;
   -moz-box-flex: auto;
@@ -968,6 +969,8 @@ a {
     border: none;
     cursor: pointer;
     font-size: 25px; }
+  .postcard--displayed {
+    display: block; }
 
 @-webkit-keyframes openModalPicture {
   0% {
