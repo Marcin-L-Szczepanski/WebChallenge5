@@ -39,9 +39,9 @@ function openModal(e) {
   postcardModalPicture.src = e.target.parentElement.parentElement.firstElementChild.src;
   let currentPostcard = e.target.parentElement.parentElement;
 
-  postcardModalPreviousButton.addEventListener("click", closeModal);
+  postcardModalPreviousButton.addEventListener("click", showPreviousPicture);
   postcardModalCloseButton.addEventListener("click", closeModal);
-  postcardModalNextButton.addEventListener("click", closeModal);
+  postcardModalNextButton.addEventListener("click", showNextPicture);
 
   document.addEventListener("keydown", function (e) {
     switch (e.keyCode) {
@@ -52,7 +52,7 @@ function openModal(e) {
         if (!currentPostcard.previousElementSibling || !currentPostcard.previousElementSibling.classList.contains("postcard--displayed")) {
           break;
         } else {
-          changePicture();
+          showPreviousPicture();
         }
         break;
       case 39:
@@ -60,17 +60,7 @@ function openModal(e) {
           break;
           //currentPostcard = currentPostcard.nextElementSibling;
         } else {
-          var nextPostcards = [];
-          while (currentPostcard.nextElementSibling) {
-            nextPostcards.push(currentPostcard = currentPostcard.nextElementSibling);
-          }
-          let nextDisplayedPostcard = nextPostcards.find(function (nextPostcard) {
-            if (nextPostcard.classList.contains("postcard--displayed")) {
-              return true;
-            }
-          });
-          postcardModalPicture.src = nextDisplayedPostcard.firstElementChild.src;
-          currentPostcard = nextDisplayedPostcard;
+          showNextPicture();
         }
         break;
     }
@@ -85,8 +75,8 @@ function openModal(e) {
     galleryBody.removeChild(postcardModal);
   }
   
-  function changePicture() {
-    var prevPostcards = [];
+  function showPreviousPicture() {
+    let prevPostcards = [];
     while (currentPostcard.previousElementSibling) {
       prevPostcards.push(currentPostcard = currentPostcard.previousElementSibling);
     }
@@ -97,5 +87,19 @@ function openModal(e) {
     });
     postcardModalPicture.src = prevDisplayedPostcard.firstElementChild.src;
     currentPostcard = prevDisplayedPostcard;
+  }
+  
+  function showNextPicture() {
+    let nextPostcards = [];
+    while (currentPostcard.nextElementSibling) {
+      nextPostcards.push(currentPostcard = currentPostcard.nextElementSibling);
+    }
+    let nextDisplayedPostcard = nextPostcards.find(function (nextPostcard) {
+      if (nextPostcard.classList.contains("postcard--displayed")) {
+        return true;
+      }
+    });
+    postcardModalPicture.src = nextDisplayedPostcard.firstElementChild.src;
+    currentPostcard = nextDisplayedPostcard;
   }
 }
