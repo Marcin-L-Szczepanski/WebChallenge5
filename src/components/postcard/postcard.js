@@ -52,17 +52,7 @@ function openModal(e) {
         if (!currentPostcard.previousElementSibling || !currentPostcard.previousElementSibling.classList.contains("postcard--displayed")) {
           break;
         } else {
-          var prevPostcards = [];
-          while (currentPostcard.previousElementSibling) {
-            prevPostcards.push(currentPostcard = currentPostcard.previousElementSibling);
-          }
-          let prevDisplayedPostcard = prevPostcards.find(function (prevPostcard) {
-            if (prevPostcard.classList.contains("postcard--displayed")) {
-              return true;
-            }
-          });
-          postcardModalPicture.src = prevDisplayedPostcard.firstElementChild.src;
-          currentPostcard = prevDisplayedPostcard;
+          changePicture();
         }
         break;
       case 39:
@@ -93,5 +83,19 @@ function openModal(e) {
 
   function closeModal() {
     galleryBody.removeChild(postcardModal);
+  }
+  
+  function changePicture() {
+    var prevPostcards = [];
+    while (currentPostcard.previousElementSibling) {
+      prevPostcards.push(currentPostcard = currentPostcard.previousElementSibling);
+    }
+    let prevDisplayedPostcard = prevPostcards.find(function (prevPostcard) {
+      if (prevPostcard.classList.contains("postcard--displayed")) {
+        return true;
+      }
+    });
+    postcardModalPicture.src = prevDisplayedPostcard.firstElementChild.src;
+    currentPostcard = prevDisplayedPostcard;
   }
 }
