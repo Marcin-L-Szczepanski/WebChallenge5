@@ -1,10 +1,12 @@
 .menu {
   &__button {
     position: fixed;
-    bottom: 5%;
-    left: calc(50% - 35%);
-    width: 70%;
-    max-width: none;
+    bottom: 15%;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
     background-color: $color-navbar;
     border: 1px solid #ffffff;
     opacity: 0.8;
@@ -19,9 +21,9 @@
       bottom: auto;
     }
     &--hidden {
-      bottom: -30px;
-      left: calc(50% - 30%);
-      width: 60%;
+      right: -30px;
+      width: 20px;
+      height: 20px;
       opacity: 0 !important;
     }
     &:hover {
@@ -35,7 +37,7 @@
   }
   &__list {
     position: fixed;
-    bottom: calc(5% + 32px);
+    bottom: 140px;
     left: 0;
     width: 100vw;
     background-color: $color-navbar;
