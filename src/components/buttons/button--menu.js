@@ -33,7 +33,7 @@ function hideShowMenuButton () {
 function hideMenu () {
   showHideButton.setAttribute("aria-expanded", "false");
   showHideButton.classList.remove("menu__button--open");
-  menuList.classList.add("menu__list--hidden");
+  menuList.classList.add("menu__list--hidden", "menu__list--top");
 }
 
 function showMenu () {

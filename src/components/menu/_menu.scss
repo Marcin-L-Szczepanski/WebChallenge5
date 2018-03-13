@@ -1,14 +1,14 @@
 .menu {
   &__list {
     position: fixed;
-    bottom: 140px;
+    bottom: 150px;
     left: 0;
     width: 100vw;
     background-color: $color-navbar;
     text-align: center;
     z-index: 100;
     &--top {
-      top: 32px;
+      top: 55px;
       bottom: auto;
     }
     &--hidden {

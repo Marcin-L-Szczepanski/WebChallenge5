@@ -683,7 +683,7 @@ a {
     right: 30px; }
   .button--menu {
     position: fixed;
-    bottom: 15%;
+    bottom: 100px;
     right: 30px; }
   .button--hidden {
     bottom: -70px;
@@ -708,14 +708,14 @@ a {
 
 .menu__list {
   position: fixed;
-  bottom: 140px;
+  bottom: 150px;
   left: 0;
   width: 100vw;
   background-color: #0d0b11;
   text-align: center;
   z-index: 100; }
   .menu__list--top {
-    top: 32px;
+    top: 55px;
     bottom: auto; }
   .menu__list--hidden {
     display: none; }
