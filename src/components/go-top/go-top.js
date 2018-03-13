@@ -1,12 +1,12 @@
 document.addEventListener("scroll", function() {
   "use strict";
-  const gotop_btn = document.querySelector("#go-top");
-  let scroll_position = window.pageYOffset;
+  const gotopButton = document.querySelector("#go-top");
+  let scrollPosition = window.pageYOffset;
   
-  if(scroll_position > 200) {
-    gotop_btn.classList.add("go-top--showing");
+  if(scrollPosition > 200) {
+    gotopButton.classList.add("go-top--showing");
   }
   else {
-    gotop_btn.classList.remove("go-top--showing");
+    gotopButton.classList.remove("go-top--showing");
   }
 }, false);
