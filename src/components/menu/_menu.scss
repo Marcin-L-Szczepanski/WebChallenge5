@@ -32,9 +32,6 @@
   // Large screen (@screen-large)
   @mixin menu\@screen-large {
     .menu {
-      &__button {
-        display: none;
-      }
       &__list {
         @include flexbox;
         @include justify-content(flex-end);

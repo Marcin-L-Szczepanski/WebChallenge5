@@ -1290,6 +1290,9 @@ a {
     .opinion__text {
       width: 100%; } }
 @media only screen and (min-width: 850px) {
+  .button--menu {
+    display: none; }
+
   main {
     padding-top: 120px; }
 
@@ -1306,8 +1309,6 @@ a {
     background-position: 75px center;
     background-size: 700px; }
 
-  .menu__button {
-    display: none; }
   .menu__list {
     display: -webkit-box;
     display: -moz-box;
