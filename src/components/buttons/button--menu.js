@@ -1,6 +1,6 @@
 const showHideButton = document.createElement("button");
 const menuList = document.querySelector("#menu__list");
-let currentPosition = 0;
+let scrollPosition = 0;
 
 (function createMenuButton() {
   "use strict";
@@ -19,7 +19,7 @@ function hideShowMenuButton () {
     showHideButton.classList.add("menu__button--top");
     menuList.classList.add("menu__list--top"); 
   }
-  else if (currentPosition > window.pageYOffset) { 
+  else if (scrollPosition > 200) { 
     showHideButton.classList.remove("menu__button--top");
     showHideButton.classList.remove("menu__button--hidden"); 
   } else {
@@ -27,7 +27,7 @@ function hideShowMenuButton () {
     showHideButton.classList.add("menu__button--hidden");
     menuList.classList.remove("menu__list--top"); 
   }
-  currentPosition = window.pageYOffset;
+  scrollPosition = window.pageYOffset;
 }
 
 function hideMenu () {
