@@ -4,9 +4,9 @@ document.addEventListener("scroll", function() {
   let scrollPosition = window.pageYOffset;
   
   if(scrollPosition > 200) {
-    gotopButton.classList.add("go-top--showing");
+    gotopButton.classList.remove("button--hidden");
   }
   else {
-    gotopButton.classList.remove("go-top--showing");
+    gotopButton.classList.add("button--hidden");
   }
 }, false);
