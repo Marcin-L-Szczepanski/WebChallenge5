@@ -73,9 +73,14 @@
     opacity: 1;
   }
   &--top {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: auto;
+    background-color: $color-navbar;
+    border: 1px solid $white;
+    &:hover {
+      background-color: $color-bg-dark;
+    }
   }
 }
 

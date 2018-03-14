@@ -5,7 +5,7 @@
     left: 0;
     width: 100vw;
     background-color: $color-navbar;
-    text-align: center;
+    text-align: right;
     z-index: 100;
     &--top {
       top: 55px;
@@ -25,6 +25,7 @@
   &__link {
     display: block;   
     padding:1.25em 1.25em;
+    padding-right: 100px;
   }
 }
 

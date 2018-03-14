@@ -400,9 +400,6 @@ body {
   font-weight: 400;
   background-color: #0d0b11; }
 
-.block_scroll {
-  overflow: hidden; }
-
 ul {
   list-style: none; }
 
@@ -695,9 +692,13 @@ a {
     background-color: #0d0b11;
     opacity: 1; }
   .button--top {
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: auto; }
+    bottom: auto;
+    background-color: #0d0b11;
+    border: 1px solid #ffffff; }
+    .button--top:hover {
+      background-color: #161828; }
 
 .logo {
   font-weight: 400; }
@@ -715,7 +716,7 @@ a {
   left: 0;
   width: 100vw;
   background-color: #0d0b11;
-  text-align: center;
+  text-align: right;
   z-index: 100; }
   .menu__list--top {
     top: 55px;
@@ -729,7 +730,8 @@ a {
     transition: background-color 200ms linear; }
 .menu__link {
   display: block;
-  padding: 1.25em 1.25em; }
+  padding: 1.25em 1.25em;
+  padding-right: 100px; }
 
 .intro {
   text-align: center;

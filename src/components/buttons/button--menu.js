@@ -1,7 +1,6 @@
 const showHideButton = document.createElement("button");
 const menuList = document.querySelector("#menu__list");
 const body = document.querySelector("body");
-let scrollPosition = 0;
 
 (function createMenuButton() {
   "use strict";
@@ -12,37 +11,35 @@ let scrollPosition = 0;
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
   menu.insertBefore(showHideButton, menu.firstElementChild);
+  menuList.classList.add("menu__list--top");
   }());
 
 function hideShowMenuButton () {
-  if (window.pageYOffset <= 100 ) { 
+  let scrollPosition = window.pageYOffset;
+  if (scrollPosition > 200) { 
+    showHideButton.classList.remove("button--hidden");
+    showHideButton.classList.remove("button--top"); 
+  } else if (window.pageYOffset <= 100 ) { 
     showHideButton.classList.remove("button--hidden"); 
     showHideButton.classList.add("button--top");
     menuList.classList.add("menu__list--top"); 
-  }
-  else if (scrollPosition > 200) { 
-    showHideButton.classList.remove("button--top");
-    showHideButton.classList.remove("button--hidden"); 
   } else {
-    showHideButton.classList.remove("button--top");
     showHideButton.classList.add("button--hidden");
+    showHideButton.classList.remove("button--top");
     menuList.classList.remove("menu__list--top"); 
   }
-  scrollPosition = window.pageYOffset;
 }
 
 function hideMenu () {
   showHideButton.setAttribute("aria-expanded", "false");
   showHideButton.classList.remove("menu__button--open");
   menuList.classList.add("menu__list--hidden");
-  body.classList.remove("block_scroll");
 }
 
 function showMenu () {
   showHideButton.setAttribute("aria-expanded", "true");
   showHideButton.classList.add("menu__button--open");
   menuList.classList.remove("menu__list--hidden");
-  body.classList.add("block_scroll");
 }
 
 document.addEventListener("scroll", function() {
