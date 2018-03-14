@@ -1,5 +1,6 @@
 const showHideButton = document.createElement("button");
 const menuList = document.querySelector("#menu__list");
+const body = document.querySelector("body");
 let scrollPosition = 0;
 
 (function createMenuButton() {
@@ -33,13 +34,15 @@ function hideShowMenuButton () {
 function hideMenu () {
   showHideButton.setAttribute("aria-expanded", "false");
   showHideButton.classList.remove("menu__button--open");
-  menuList.classList.add("menu__list--hidden", "menu__list--top");
+  menuList.classList.add("menu__list--hidden");
+  body.classList.remove("block_scroll");
 }
 
 function showMenu () {
   showHideButton.setAttribute("aria-expanded", "true");
   showHideButton.classList.add("menu__button--open");
   menuList.classList.remove("menu__list--hidden");
+  body.classList.add("block_scroll");
 }
 
 document.addEventListener("scroll", function() {
