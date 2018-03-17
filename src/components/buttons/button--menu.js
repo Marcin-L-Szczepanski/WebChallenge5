@@ -7,7 +7,7 @@ const body = document.querySelector("body");
   const menu = document.querySelector("#menu");
   
   showHideButton.innerHTML = "Menu";
-  showHideButton.classList.add("menu__button", "button", "button--side", "button--menu");
+  showHideButton.classList.add("menu__button", "button", "button--side", "button--top");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
   menu.insertBefore(showHideButton, menu.firstElementChild);
@@ -17,14 +17,17 @@ const body = document.querySelector("body");
 function hideShowMenuButton () {
   let scrollPosition = window.pageYOffset;
   if (scrollPosition > 200) { 
+    showHideButton.classList.remove("button--top");
     showHideButton.classList.remove("button--hidden");
-    showHideButton.classList.add("button--menu-bottom"); 
+    showHideButton.classList.add("button--bottom"); 
   } else if (window.pageYOffset <= 100 ) { 
+    showHideButton.classList.add("button--top");
     showHideButton.classList.remove("button--hidden"); 
-    showHideButton.classList.remove("button--menu-bottom");
+    showHideButton.classList.remove("button--bottom");
     menuList.classList.add("menu__list--top"); 
   } else {
     showHideButton.classList.add("button--hidden");
+    showHideButton.classList.remove("button--bottom");
 //    showHideButton.classList.remove("button--top");
     menuList.classList.remove("menu__list--top"); 
   }

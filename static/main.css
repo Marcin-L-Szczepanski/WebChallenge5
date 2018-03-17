@@ -681,32 +681,30 @@ a {
     position: fixed;
     bottom: 30px;
     right: 30px; }
-  .button--menu {
+  .button--top {
     position: absolute;
     top: 0;
     right: 30px;
     bottom: auto;
     background-color: #0d0b11;
     border: 1px solid #ffffff; }
-    .button--menu:hover {
+    .button--top:hover {
       background-color: #161828; }
   .button--hidden {
+    position: fixed;
+    right: 30px;
+    top: auto;
     bottom: -70px;
     opacity: 0 !important; }
   .button--open {
     background-color: #0d0b11;
     opacity: 1; }
-  .button--menu-bottom {
+  .button--bottom {
     position: fixed;
     top: auto;
     bottom: 100px;
     right: 30px; }
 
-@keyframes move_to_bottom {
-  0% {
-    top: 0; }
-  100% {
-    bottom: 50px; } }
 .logo {
   font-weight: 400; }
   .logo--bold {
