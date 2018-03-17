@@ -672,10 +672,10 @@ a {
     cursor: pointer;
     opacity: 1; }
     .button--side:hover {
-      background-color: #0d0b11;
+      background-color: #d6d6d6;
       opacity: 1; }
     .button--side:focus {
-      background-color: #0d0b11;
+      background-color: #d6d6d6;
       opacity: 1; }
   .button--gotop {
     position: fixed;
@@ -695,7 +695,8 @@ a {
     right: 30px;
     top: auto;
     bottom: -70px;
-    opacity: 0 !important; }
+    opacity: 0 !important;
+    background-color: #0d0b11; }
   .button--open {
     background-color: #0d0b11;
     opacity: 1; }

@@ -6,7 +6,9 @@ const body = document.querySelector("body");
   "use strict";
   const menu = document.querySelector("#menu");
   
-  showHideButton.innerHTML = "Menu";
+  const svg = '<svg height="30" width="40"><line class="button__svg" x1="0" y1="3" x2="25" y2="3"/><line class="button__svg" x1="0" y1="15" x2="25" y2="15"/><line class="button__svg" x1="0" y1="27" x2="25" y2="27"/></svg>';
+  
+  showHideButton.innerHTML = svg;
   showHideButton.classList.add("menu__button", "button", "button--side", "button--top");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")

@@ -41,12 +41,12 @@
     cursor: pointer;
     opacity: 1;
     &:hover {
-      background-color: $color-navbar;
+      background-color: $color-btn-side-hover;
       opacity: 1;
     }
 
     &:focus {
-      background-color: $color-navbar;
+      background-color: $color-btn-side-hover;
       opacity: 1;
     }
   }
@@ -75,6 +75,7 @@
     top: auto;
     bottom: -70px;
     opacity: 0 !important;
+    background-color: $color-navbar;
   }
   
   &--open {
