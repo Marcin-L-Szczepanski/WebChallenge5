@@ -682,24 +682,31 @@ a {
     bottom: 30px;
     right: 30px; }
   .button--menu {
-    position: fixed;
-    bottom: 100px;
-    right: 30px; }
+    position: absolute;
+    top: 0;
+    right: 30px;
+    bottom: auto;
+    background-color: #0d0b11;
+    border: 1px solid #ffffff; }
+    .button--menu:hover {
+      background-color: #161828; }
   .button--hidden {
     bottom: -70px;
     opacity: 0 !important; }
   .button--open {
     background-color: #0d0b11;
     opacity: 1; }
-  .button--top {
+  .button--menu-bottom {
     position: fixed;
-    top: 0;
-    bottom: auto;
-    background-color: #0d0b11;
-    border: 1px solid #ffffff; }
-    .button--top:hover {
-      background-color: #161828; }
+    top: auto;
+    bottom: 100px;
+    right: 30px; }
 
+@keyframes move_to_bottom {
+  0% {
+    top: 0; }
+  100% {
+    bottom: 50px; } }
 .logo {
   font-weight: 400; }
   .logo--bold {

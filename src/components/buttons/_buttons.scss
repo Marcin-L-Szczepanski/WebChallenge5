@@ -58,9 +58,15 @@
   }
   
   &--menu {
-    position: fixed;
-    bottom: 100px;
+    position: absolute;
+    top: 0;
     right: 30px;
+    bottom: auto;
+    background-color: $color-navbar;
+    border: 1px solid $white;
+    &:hover {
+      background-color: $color-bg-dark;
+    }
   }
 
   &--hidden {
@@ -72,15 +78,21 @@
     background-color: $color-navbar;
     opacity: 1;
   }
-  &--top {
+  &--menu-bottom {
     position: fixed;
+    top: auto;
+    bottom: 100px;
+    right: 30px;
+  }
+}
+
+@keyframes move_to_bottom {
+  0% {
     top: 0;
-    bottom: auto;
-    background-color: $color-navbar;
-    border: 1px solid $white;
-    &:hover {
-      background-color: $color-bg-dark;
-    }
+  }
+  
+  100% {
+    bottom: 50px;
   }
 }
 
