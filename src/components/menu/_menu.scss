@@ -38,6 +38,10 @@
         @include justify-content(flex-end);
         width: auto;
         position: static;
+        text-align: center;
+      }
+      &__link {
+        padding-right: 1.25em;
       }
     }
   }

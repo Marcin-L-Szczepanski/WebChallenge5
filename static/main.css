@@ -1331,7 +1331,10 @@ a {
     justify-content: flex-end;
     -ms-flex-pack: flex-end;
     width: auto;
-    position: static; }
+    position: static;
+    text-align: center; }
+  .menu__link {
+    padding-right: 1.25em; }
 
   .header {
     display: -webkit-box;
