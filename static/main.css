@@ -657,8 +657,9 @@ a {
     font-size: 18px; }
   .button--menu {
     position: absolute;
-    top: 35px;
+    top: 40px;
     right: 30px;
+    padding: 5px 5px;
     background-color: #0d0b11; }
     .button--menu:hover {
       background-color: #0d0b11; }

@@ -45,8 +45,9 @@
   
   &--menu {
     position: absolute;
-    top: 35px;
+    top: 40px;
     right: 30px;  
+    padding: 5px 5px;
     background-color: $color-navbar;
     &:hover {
       background-color: $color-navbar;
