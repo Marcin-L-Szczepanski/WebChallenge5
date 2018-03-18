@@ -5,10 +5,8 @@ const body = document.querySelector("body");
 (function createMenuButton() {
   "use strict";
   const menu = document.querySelector("#menu");
-  
-  const svg = '<svg height="30" width="40"><line class="button__svg" x1="0" y1="3" x2="25" y2="3"/><line class="button__svg" x1="0" y1="15" x2="25" y2="15"/><line class="button__svg" x1="0" y1="27" x2="25" y2="27"/></svg>';
-  
-  showHideButton.innerHTML = svg;
+  const menuBtnSvg = '<svg id="svg" class="button__svg button__svg--menu-closed" width="35" height="30"><line class="line" x1="3" y1="3" x2="31" y2="3"/><line class="line" x1="3" y1="15" x2="31" y2="15"/><line class="line" x1="3" y1="27" x2="31" y2="27"/></svg>';
+  showHideButton.innerHTML = menuBtnSvg;
   showHideButton.classList.add("menu__button", "button", "button--side", "button--top");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
@@ -30,7 +28,6 @@ function hideShowMenuButton () {
   } else {
     showHideButton.classList.add("button--hidden");
     showHideButton.classList.remove("button--bottom");
-//    showHideButton.classList.remove("button--top");
     menuList.classList.remove("menu__list--top"); 
   }
 }
@@ -54,6 +51,8 @@ document.addEventListener("scroll", function() {
 });
 
 showHideButton.addEventListener("click", function() {
+  svg.classList.toggle("button__svg--menu-open");
+  svg.classList.toggle("button__svg--menu-closed");
   if (menuList.classList.contains("menu__list--hidden")) {
     showMenu();
   } else {

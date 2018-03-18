@@ -18,6 +18,23 @@
     stroke-width: 5;
     stroke-linejoin: round;
     stroke-linecap: round;
+    &--menu-closed, &--menu-open {
+      & > .line {
+        transition: .5s;
+      }
+    }
+    &--menu-open {
+      & > .line:nth-of-type(1) {
+        transform: rotate(45deg) translateY(-4px) translateX(7px);
+      }
+      & > .line:nth-of-type(2) {
+        transform: translate(40px);
+        opacity: 0;
+      }
+      & > .line:nth-of-type(3) {
+        transform: rotate(-45deg) translateY(-4px) translateX(-17px);
+      }
+    }
   }
 
   &--large {
@@ -33,7 +50,7 @@
     background-color: $color-btn-side;
     height: 55px;
     width: 55px;
-    padding: 0 15px;
+    padding: 0;
     border-radius: 3px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .7);
     transition: all 400ms linear;
