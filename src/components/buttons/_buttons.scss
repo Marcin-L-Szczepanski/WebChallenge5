@@ -42,6 +42,16 @@
     max-width: 145px;
     font-size: $font-size-button--large;
   }
+  
+  &--menu {
+    position: absolute;
+    top: 35px;
+    right: 30px;  
+    background-color: $color-navbar;
+    &:hover {
+      background-color: $color-navbar;
+    }
+  }
 
   &--side {
     @include flexbox;
@@ -73,18 +83,6 @@
     bottom: 30px;
     right: 30px;
   }
-  
-  &--top {
-    position: absolute;
-    top: 0;
-    right: 30px;
-    bottom: auto;
-    background-color: $color-navbar;
-    border: 1px solid $white;
-    &:hover {
-      background-color: $color-bg-dark;
-    }
-  }
 
   &--hidden {
     position: fixed;
@@ -92,18 +90,11 @@
     top: auto;
     bottom: -70px;
     opacity: 0 !important;
-    background-color: $color-navbar;
   }
   
   &--open {
     background-color: $color-navbar;
     opacity: 1;
-  }
-  &--bottom {
-    position: fixed;
-    top: auto;
-    bottom: 100px;
-    right: 30px;
   }
 }
 

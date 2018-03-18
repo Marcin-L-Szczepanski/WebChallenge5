@@ -7,30 +7,11 @@ const body = document.querySelector("body");
   const menu = document.querySelector("#menu");
   const menuBtnSvg = '<svg id="svg" class="button__svg button__svg--menu-closed" width="35" height="30"><line class="line" x1="3" y1="3" x2="31" y2="3"/><line class="line" x1="3" y1="15" x2="31" y2="15"/><line class="line" x1="3" y1="27" x2="31" y2="27"/></svg>';
   showHideButton.innerHTML = menuBtnSvg;
-  showHideButton.classList.add("menu__button", "button", "button--side", "button--top");
+  showHideButton.classList.add("menu__button", "button", "button--menu");
   showHideButton.setAttribute("type", "button");
   showHideButton.setAttribute("aria-controls", "menu__list")
   menu.insertBefore(showHideButton, menu.firstElementChild);
-  menuList.classList.add("menu__list--top");
   }());
-
-function hideShowMenuButton () {
-  let scrollPosition = window.pageYOffset;
-  if (scrollPosition > 200) { 
-    showHideButton.classList.remove("button--top");
-    showHideButton.classList.remove("button--hidden");
-    showHideButton.classList.add("button--bottom"); 
-  } else if (window.pageYOffset <= 100 ) { 
-    showHideButton.classList.add("button--top");
-    showHideButton.classList.remove("button--hidden"); 
-    showHideButton.classList.remove("button--bottom");
-    menuList.classList.add("menu__list--top"); 
-  } else {
-    showHideButton.classList.add("button--hidden");
-    showHideButton.classList.remove("button--bottom");
-    menuList.classList.remove("menu__list--top"); 
-  }
-}
 
 function hideMenu () {
   showHideButton.setAttribute("aria-expanded", "false");
@@ -43,12 +24,6 @@ function showMenu () {
   showHideButton.classList.add("menu__button--open");
   menuList.classList.remove("menu__list--hidden");
 }
-
-document.addEventListener("scroll", function() {
-    if (!showHideButton.classList.contains("menu__button--open")) {
-      hideShowMenuButton();
-    }
-});
 
 showHideButton.addEventListener("click", function() {
   svg.classList.toggle("button__svg--menu-open");
