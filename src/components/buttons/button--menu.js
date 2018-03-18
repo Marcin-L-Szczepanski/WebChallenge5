@@ -37,6 +37,8 @@ showHideButton.addEventListener("click", function() {
 
 window.addEventListener("click", function(e){	
   if (menuList.contains(e.target)){
+    svg.classList.remove("button__svg--menu-open");
+    svg.classList.add("button__svg--menu-closed");
     hideMenu();
   }
 });
