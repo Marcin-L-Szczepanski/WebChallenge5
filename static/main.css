@@ -400,6 +400,9 @@ body {
   font-weight: 400;
   background-color: #0d0b11; }
 
+main {
+  padding-top: 85px; }
+
 ul {
   list-style: none; }
 
@@ -409,7 +412,10 @@ a {
 
 .section--navbar {
   background-color: #0d0b11;
-  z-index: 2; }
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 85px; }
 .section--dark {
   background-color: #161828; }
 .section--intro {
@@ -441,8 +447,8 @@ a {
   -ms-align-items: center;
   align-items: center; }
   .wrapper--low {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 12px;
+    padding-bottom: 12px; }
   .wrapper--high {
     padding-top: 100px;
     padding-bottom: 100px; }
@@ -657,7 +663,7 @@ a {
     font-size: 18px; }
   .button--menu {
     position: absolute;
-    top: 40px;
+    top: 23px;
     right: 30px;
     padding: 5px 5px;
     background-color: #0d0b11; }
@@ -1304,18 +1310,11 @@ a {
   .button--menu {
     display: none; }
 
-  main {
-    padding-top: 120px; }
-
   .section__anchor {
     display: block;
     position: absolute;
     height: 120px;
     margin-top: -119px; }
-  .section--navbar {
-    position: fixed;
-    width: 100%;
-    height: 120px; }
   .section--intro {
     background-position: 75px center;
     background-size: 700px; }
