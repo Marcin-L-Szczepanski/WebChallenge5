@@ -22,6 +22,12 @@
   &--footer {
     background-color: $color-bg-dark;
   }
+  &__anchor {
+    display: block;
+    position: absolute;
+    height: 85px;
+    margin-top: -84px;
+  }
 }
 
 // Small screen < 650 px (@screen-small)
@@ -39,12 +45,6 @@
 // Large screen  >  850 (@screen-large)
 @mixin section\@screen-large {
   .section {
-    &__anchor {
-      display: block;
-      position: absolute;
-      height: 120px;
-      margin-top: -119px;
-    }
     &--intro {
       background-position: 75px center;
       background-size: 700px;

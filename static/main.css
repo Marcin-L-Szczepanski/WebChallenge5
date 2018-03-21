@@ -427,6 +427,11 @@ a {
   color: #323232; }
 .section--footer {
   background-color: #161828; }
+.section__anchor {
+  display: block;
+  position: absolute;
+  height: 85px;
+  margin-top: -84px; }
 
 .wrapper {
   width: 100%;
@@ -1310,11 +1315,6 @@ a {
   .button--menu {
     display: none; }
 
-  .section__anchor {
-    display: block;
-    position: absolute;
-    height: 120px;
-    margin-top: -119px; }
   .section--intro {
     background-position: 75px center;
     background-size: 700px; }
